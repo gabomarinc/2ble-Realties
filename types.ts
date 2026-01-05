@@ -1,3 +1,4 @@
+import React from 'react';
 
 export type Language = 'en' | 'es';
 
@@ -28,7 +29,7 @@ export interface ContentData {
   };
   hero: {
     slogan: string;
-    title: string;
+    title: React.ReactNode | string;
     subtitle: string;
     cta: string;
   };
@@ -55,6 +56,8 @@ export interface ContentData {
     team: { name: string; role: string; desc: string }[];
   };
   missionVision: {
+    subTitle: string;
+    title: React.ReactNode | string;
     mission: { title: string; desc: string };
     vision: { title: string; desc: string };
   };

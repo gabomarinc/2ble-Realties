@@ -10,23 +10,26 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  scroll-behavior: auto; /* Cambiado de smooth a auto para evitar lag percibido en el scroll */
+  scroll-behavior: auto;
   background-color: var(--navy);
   color: #fff;
   overflow-x: hidden;
 }
 
-h1, h2, h3, .font-serif {
+h1,
+h2,
+h3,
+.font-serif {
   font-family: 'Playfair Display', serif;
 }
 
-/* Snappier Reveal Engine - Optimized for Performance */
+/* SUPER FAST REVEAL ENGINE */
 .reveal {
   opacity: 0;
-  transform: translateY(30px);
-  transition: 
-    opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
-    transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(20px);
+  transition:
+    opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   will-change: transform, opacity;
 }
 
@@ -35,11 +38,31 @@ h1, h2, h3, .font-serif {
   transform: translateY(0);
 }
 
-/* Mask Animation - Snappier */
+/* APPLE STYLE BLUR REVEAL */
+.apple-reveal {
+  opacity: 0;
+  filter: blur(10px);
+  transform: translateY(30px) scale(0.98);
+  transition:
+    opacity 1s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 1s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity, filter;
+}
+
+.reveal-active .apple-reveal,
+.reveal-active.apple-reveal {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0) scale(1);
+}
+
+/* Mask Animation - Quicker */
 .mask-reveal {
   clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
-  transition: clip-path 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: clip-path 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
 .reveal-active .mask-reveal {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
@@ -54,10 +77,10 @@ h1, h2, h3, .font-serif {
 
 .gallery-item {
   flex: 1;
-  transition: flex 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: flex 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   position: relative;
   overflow: hidden;
-  border-radius: 60px; /* Bordes extra redondeados como solicitó el usuario */
+  border-radius: 60px;
   cursor: pointer;
   will-change: flex;
 }
@@ -73,6 +96,7 @@ h1, h2, h3, .font-serif {
     flex-direction: column;
     height: auto;
   }
+
   .gallery-item {
     height: 300px;
     min-height: 300px;
@@ -83,19 +107,19 @@ h1, h2, h3, .font-serif {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.7s ease;
+  transition: transform 0.6s ease;
 }
 
 .gallery-content {
   position: absolute;
   inset: 0;
   padding: 3rem;
-  background: linear-gradient(0deg, rgba(11,18,33,0.9) 0%, rgba(11,18,33,0) 60%);
+  background: linear-gradient(0deg, rgba(11, 18, 33, 0.9) 0%, rgba(11, 18, 33, 0) 60%);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   opacity: 0;
-  transition: opacity 0.4s ease;
+  transition: opacity 0.3s ease;
   pointer-events: none;
 }
 
@@ -104,22 +128,58 @@ h1, h2, h3, .font-serif {
 }
 
 /* Hero Speed-up */
-.hero-title { opacity: 0; transform: translateY(20px); will-change: transform, opacity; }
-.hero-active .hero-title {
-  opacity: 1; transform: translateY(0);
-  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+.hero-title {
+  opacity: 0;
+  transform: translateY(15px);
+  will-change: transform, opacity;
 }
 
-/* Simple Parallax - Less taxing */
-.parallax-container img {
-  transform: scale(1.1);
-  transition: transform 0.6s ease;
+.hero-active .hero-title {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
+
+/* Simple Parallax */
+.parallax-container img {
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+}
+
 .reveal-active.parallax-container img {
   transform: scale(1);
 }
 
 /* Custom Scrollbar */
-::-webkit-scrollbar { width: 5px; }
-::-webkit-scrollbar-track { background: var(--navy); }
-::-webkit-scrollbar-thumb { background: var(--champagne); }
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--navy);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--champagne);
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float-slow {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float 8s ease-in-out infinite;
+  animation-delay: 1s;
+}

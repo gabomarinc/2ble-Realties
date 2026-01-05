@@ -12,7 +12,7 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
     },
     hero: {
       slogan: "Double the Standard",
-      title: "Elevate Your Panama Investment",
+      title: <>Elevate<br />Your<br /><i className="font-serif italic text-white/90">Investment</i><br />in<br />Panama</>,
       subtitle: "Beyond square footage, we secure your status and freedom. Intelligent assets for the visionary investor.",
       cta: "Experience the Difference"
     },
@@ -22,7 +22,7 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
       items: [
         { id: 'd1', title: 'Santa Maria Court', location: 'Costa del Este', description: 'The pinnacle of golf-side residential elegance.', image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200' },
         { id: 'd2', title: 'Ocean Reef Villas', location: 'Ocean Reef Islands', description: 'Island living within the city limits. Unmatched privacy.', image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1200' },
-        { id: 'd3', title: 'Yoo Panama', location: 'Avenida Balboa', description: 'Iconic design meeting the Pacific Ocean horizon.', image: 'https://images.unsplash.com/photo-1449156001935-d28bc1cd7ead?auto=format&fit=crop&q=80&w=1200' },
+        { id: 'd3', title: 'Yoo Panama', location: 'Avenida Balboa', description: 'Iconic design meeting the Pacific Ocean horizon.', image: 'https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&q=80&w=1200' },
         { id: 'd4', title: 'The Reserve', location: 'Santa Maria', description: 'Surrounded by nature and the worlds finest greens.', image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200' }
       ]
     },
@@ -54,6 +54,8 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
       ]
     },
     missionVision: {
+      subTitle: "Legacy & Vision",
+      title: <>Our Soul<br /><i className="font-serif italic text-white/50">Defines</i> the<br />Standard</>,
       mission: {
         title: "Our Manifest",
         desc: "We don't close deals; we secure legacies. Our mission is to dismantle the ordinary, providing a sanctuary of intelligence and status for those who demand Panama's absolute best."
@@ -95,7 +97,7 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
     },
     hero: {
       slogan: "Double the Standard",
-      title: "Eleve su Inversión en Panamá",
+      title: <>Eleve<br />su<br /><i className="font-serif italic text-white/80 font-light">Inversión</i><br />en<br />Panamá</>,
       subtitle: "Más allá de metros cuadrados, aseguramos su estatus y libertad. Activos inteligentes para el inversor visionario.",
       cta: "Viva la Diferencia"
     },
@@ -105,7 +107,7 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
       items: [
         { id: 'd1', title: 'Santa Maria Court', location: 'Costa del Este', description: 'El pináculo de la elegancia residencial frente al golf.', image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200' },
         { id: 'd2', title: 'Ocean Reef Villas', location: 'Ocean Reef Islands', description: 'Vida isleña dentro de los límites de la ciudad. Privacidad inigualable.', image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1200' },
-        { id: 'd3', title: 'Yoo Panama', location: 'Avenida Balboa', description: 'Diseño icónico encontrándose con el horizonte del Pacífico.', image: 'https://images.unsplash.com/photo-1449156001935-d28bc1cd7ead?auto=format&fit=crop&q=80&w=1200' },
+        { id: 'd3', title: 'Yoo Panama', location: 'Avenida Balboa', description: 'Diseño icónico encontrándose con el horizonte del Pacífico.', image: 'https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&q=80&w=1200' },
         { id: 'd4', title: 'The Reserve', location: 'Santa Maria', description: 'Rodeado de naturaleza y los mejores greens del mundo.', image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200' }
       ]
     },
@@ -137,6 +139,8 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
       ]
     },
     missionVision: {
+      subTitle: "Legado y Visión",
+      title: <>Nuestra Alma<br /><i className="font-serif italic text-white/50">Define</i> el<br />Estándar</>,
       mission: {
         title: "Nuestro Manifiesto",
         desc: "No cerramos tratos; aseguramos legados. Nuestra misión es desmantelar lo ordinario, brindando un santuario de inteligencia y estatus para quienes exigen lo mejor de Panamá."
