@@ -11,19 +11,19 @@ const Properties: React.FC<PropertiesProps> = ({ lang }) => {
     const content = CONTENT[lang].properties;
 
     return (
-        <section id="properties" className="bg-white py-40 reveal border-t border-slate-50">
-            <div className="container mx-auto px-10">
-                <div className="mb-24">
-                    <div className="flex items-center gap-4 mb-8">
+        <section id="properties" className="bg-white py-24 lg:py-40 reveal border-t border-slate-50">
+            <div className="container mx-auto px-6 lg:px-10">
+                <div className="mb-16 lg:mb-24">
+                    <div className="flex items-center gap-4 mb-6 lg:mb-8">
                         <div className="w-12 h-[1px] bg-champagne"></div>
                         <span className="text-champagne font-black tracking-[0.5em] uppercase text-[10px] apple-reveal" style={{ transitionDelay: '0.1s' }}>Private Portfolio</span>
                     </div>
-                    <h2 className="text-6xl md:text-8xl font-serif text-navy leading-none mb-6 apple-reveal" style={{ transitionDelay: '0.2s' }}>
+                    <h2 className="text-5xl md:text-8xl font-serif text-navy leading-none mb-6 apple-reveal" style={{ transitionDelay: '0.2s' }}>
                         {content.title}
                     </h2>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-12 lg:gap-16">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
                     {content.items.map((property, idx) => (
                         <div
                             key={property.id}

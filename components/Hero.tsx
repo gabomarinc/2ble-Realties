@@ -27,28 +27,28 @@ const Hero: React.FC<HeroProps> = ({ lang }) => {
                 <div className="absolute inset-0 bg-[#0B1221]/90"></div> {/* Almost solid dark navy */}
             </div>
 
-            <div className="container mx-auto px-10 relative z-10 h-full flex flex-col justify-center">
+            <div className="container mx-auto px-6 lg:px-10 relative z-10 h-full flex flex-col justify-center">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
 
                     {/* Left Content */}
-                    <div className="max-w-4xl">
-                        <span className="hero-title inline-block text-champagne tracking-[0.4em] uppercase text-[10px] mb-8 font-bold block pl-1" style={{ transitionDelay: '0.1s' }}>
+                    <div className="max-w-4xl pt-20 lg:pt-0">
+                        <span className="hero-title inline-block text-champagne tracking-[0.4em] uppercase text-[9px] lg:text-[10px] mb-8 font-bold block pl-1" style={{ transitionDelay: '0.1s' }}>
                             {content.slogan}
                         </span>
 
                         {/* Main Title with Layout Handling */}
-                        <h1 className="hero-title text-6xl md:text-[6.5rem] text-white font-serif mb-10 leading-[0.95] tracking-tight" style={{ transitionDelay: '0.2s' }}>
+                        <h1 className="hero-title text-5xl md:text-[6.5rem] text-white font-serif mb-8 lg:mb-10 leading-[0.95] tracking-tight" style={{ transitionDelay: '0.2s' }}>
                             {content.title}
                         </h1>
 
-                        <p className="hero-title text-white/40 text-lg md:text-xl max-w-lg mb-16 leading-relaxed font-light mt-8" style={{ transitionDelay: '0.3s' }}>
+                        <p className="hero-title text-white/40 text-base md:text-xl max-w-lg mb-12 lg:mb-16 leading-relaxed font-light mt-6 lg:mt-8" style={{ transitionDelay: '0.3s' }}>
                             {content.subtitle}
                         </p>
 
                         <div className="hero-title" style={{ transitionDelay: '0.4s' }}>
-                            <a href="#developments" className="inline-flex items-center justify-between w-auto gap-12 border border-slate-700/50 px-8 py-5 hover:border-champagne hover:bg-champagne/10 transition-all duration-500 group">
-                                <span className="uppercase tracking-[0.3em] text-[10px] font-bold text-white group-hover:text-champagne transition-colors">{content.cta}</span>
-                                <div className="w-8 h-[1px] bg-champagne"></div>
+                            <a href="#developments" className="inline-flex items-center justify-between w-auto gap-8 lg:gap-12 border border-slate-700/50 px-6 py-4 lg:px-8 lg:py-5 hover:border-champagne hover:bg-champagne/10 transition-all duration-500 group">
+                                <span className="uppercase tracking-[0.3em] text-[9px] lg:text-[10px] font-bold text-white group-hover:text-champagne transition-colors">{content.cta}</span>
+                                <div className="w-6 lg:w-8 h-[1px] bg-champagne"></div>
                             </a>
                         </div>
                     </div>
