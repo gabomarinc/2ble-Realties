@@ -20,10 +20,62 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
       title: "The Boldest New Developments",
       subtitle: "Explore transformative new buildings that elevate modern luxury living in Panama City.",
       items: [
-        { id: 'd1', title: 'Santa Maria Court', location: 'Costa del Este', description: 'The pinnacle of golf-side residential elegance.', image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200' },
-        { id: 'd2', title: 'Ocean Reef Villas', location: 'Ocean Reef Islands', description: 'Island living within the city limits. Unmatched privacy.', image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1200' },
-        { id: 'd3', title: 'Yoo Panama', location: 'Avenida Balboa', description: 'Iconic design meeting the Pacific Ocean horizon.', image: 'https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&q=80&w=1200' },
-        { id: 'd4', title: 'The Reserve', location: 'Santa Maria', description: 'Surrounded by nature and the worlds finest greens.', image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200' }
+        {
+          id: 'd1',
+          title: 'Santa Maria Court',
+          location: 'Costa del Este',
+          description: 'The pinnacle of golf-side residential elegance.',
+          image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200',
+          fullDescription: 'Santa Maria Court sets a new benchmark for luxury living in Panama. Nestled within the prestigious Santa Maria Golf & Country Club, these residences offer an unparalleled blend of modern sophistication and serene natural beauty. Residents enjoy exclusive access to world-class amenities, including a Jack Nicklaus-designed golf course, making it the ultimate sanctuary for those seeking privacy and prestige.',
+          gallery: [
+            'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200',
+            'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=1200',
+            'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200'
+          ],
+          highlights: ['Direct Golf Course Access', 'Private Concierge Service', 'Olympic-sized Pool', 'State-of-the-Art Gym']
+        },
+        {
+          id: 'd2',
+          title: 'Ocean Reef Villas',
+          location: 'Ocean Reef Islands',
+          description: 'Island living within the city limits. Unmatched privacy.',
+          image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1200',
+          fullDescription: 'Experience the unique privilege of island living moments from the heart of the city. Ocean Reef Villas offer a private marina lifestyle with spectacular ocean views. This is more than a home; it is a retreat designed for the elite, featuring private yacht slips and an exclusive club dedicated to the finest things in life.',
+          gallery: [
+            'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1200',
+            'https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?auto=format&fit=crop&q=80&w=1200',
+            'https://images.unsplash.com/photo-1613545325278-f24b0cae1224?auto=format&fit=crop&q=80&w=1200'
+          ],
+          highlights: ['Private Marina', 'Helipad Access', 'Yacht Club Membership', 'Oceanfront Terraces']
+        },
+        {
+          id: 'd3',
+          title: 'Yoo Panama',
+          location: 'Avenida Balboa',
+          description: 'Iconic design meeting the Pacific Ocean horizon.',
+          image: 'https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&q=80&w=1200',
+          fullDescription: 'Inspired by Starck, Yoo Panama stands as a beacon of design and luxury on Avenida Balboa. With breathtaking views of the Pacific Ocean and the Panama Canal, these residences are a masterpiece of whimsical interior design and modern architecture, providing a vibrant and sophisticated lifestyle.',
+          gallery: [
+            'https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&q=80&w=1200',
+            'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&q=80&w=1200',
+            'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&q=80&w=1200'
+          ],
+          highlights: ['Interiors by Phillippe Starck', 'Full-Service Spa', 'Valet Parking', 'Award-Winning Restaurants']
+        },
+        {
+          id: 'd4',
+          title: 'The Reserve',
+          location: 'Santa Maria',
+          description: 'Surrounded by nature and the worlds finest greens.',
+          image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200',
+          fullDescription: 'The Reserve is a tranquil oasis located within Santa Maria, designed for families who value nature and space. Surrounded by lush greenery and the perfectly manicured fairways of the golf course, it offers a peaceful respite from the city with lagoon-style pools and walking trails.',
+          gallery: [
+            'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200',
+            'https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&fit=crop&q=80&w=1200',
+            'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=80&w=1200'
+          ],
+          highlights: ['Lagoon Pools', 'Walking Trails', 'Playgrounds', '24/7 Security']
+        }
       ]
     },
     properties: {
@@ -47,10 +99,37 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
       ]
     },
     authority: {
-      title: "Architects of Capital",
-      subtitle: "Experts in International Real Estate Investment",
-      team: [
-        { name: "Adrian Varela", role: "Chief Investment Strategist", desc: "Bridging the gap between global capital and Panama's most exclusive opportunities." }
+      slides: [
+        {
+          title: "Architects of Capital",
+          mainTitle: <>Double <span className="italic font-extralight text-slate-300">the Standard</span></>,
+          description: "Bridging the gap between global capital and Panama's most exclusive opportunities.",
+          image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=1200",
+          stats: [
+            { value: "$450M+", label: "Advisory" },
+            { value: "15+", label: "Market Cycles" }
+          ]
+        },
+        {
+          title: "Global Reach",
+          mainTitle: <>Worldwide <span className="italic font-extralight text-slate-300">Connections</span></>,
+          description: "Accessing an extensive network of international investors and premium properties.",
+          image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=1200",
+          stats: [
+            { value: "30+", label: "Countries" },
+            { value: "24/7", label: "Availability" }
+          ]
+        },
+        {
+          title: "Elite Advisory",
+          mainTitle: <>Strategic <span className="italic font-extralight text-slate-300">Insight</span></>,
+          description: "Providing data-driven insights to maximize your investment potential.",
+          image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200",
+          stats: [
+            { value: "12%", label: "Avg. Yield" },
+            { value: "100%", label: "Satisfaction" }
+          ]
+        }
       ]
     },
     missionVision: {
@@ -105,10 +184,62 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
       title: "Los Desarrollos Más Audaces",
       subtitle: "Explore edificios transformadores que elevan el estilo de vida de lujo moderno en la Ciudad de Panamá.",
       items: [
-        { id: 'd1', title: 'Santa Maria Court', location: 'Costa del Este', description: 'El pináculo de la elegancia residencial frente al golf.', image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200' },
-        { id: 'd2', title: 'Ocean Reef Villas', location: 'Ocean Reef Islands', description: 'Vida isleña dentro de los límites de la ciudad. Privacidad inigualable.', image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1200' },
-        { id: 'd3', title: 'Yoo Panama', location: 'Avenida Balboa', description: 'Diseño icónico encontrándose con el horizonte del Pacífico.', image: 'https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&q=80&w=1200' },
-        { id: 'd4', title: 'The Reserve', location: 'Santa Maria', description: 'Rodeado de naturaleza y los mejores greens del mundo.', image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200' }
+        {
+          id: 'd1',
+          title: 'Santa Maria Court',
+          location: 'Costa del Este',
+          description: 'El pináculo de la elegancia residencial frente al golf.',
+          image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200',
+          fullDescription: 'Santa Maria Court establece un nuevo estándar para la vida de lujo en Panamá. Ubicado dentro del prestigioso Santa Maria Golf & Country Club, estas residencias ofrecen una mezcla inigualable de sofisticación moderna y belleza natural. Los residentes disfrutan de acceso exclusivo a amenidades de clase mundial, incluyendo un campo de golf diseñado por Jack Nicklaus.',
+          gallery: [
+            'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200',
+            'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=1200',
+            'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200'
+          ],
+          highlights: ['Acceso Directo al Golf', 'Servicio de Conserjería', 'Piscina Olímpica', 'Gimnasio de Alta Gama']
+        },
+        {
+          id: 'd2',
+          title: 'Ocean Reef Villas',
+          location: 'Ocean Reef Islands',
+          description: 'Vida isleña dentro de los límites de la ciudad. Privacidad inigualable.',
+          image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1200',
+          fullDescription: 'Experimente el privilegio único de la vida en una isla a minutos del corazón de la ciudad. Ocean Reef Villas ofrece un estilo de vida de marina privada con vistas espectaculares al océano. Esto es más que un hogar; es un refugio diseñado para la élite, con muelles privados y un club exclusivo.',
+          gallery: [
+            'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1200',
+            'https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?auto=format&fit=crop&q=80&w=1200',
+            'https://images.unsplash.com/photo-1613545325278-f24b0cae1224?auto=format&fit=crop&q=80&w=1200'
+          ],
+          highlights: ['Marina Privada', 'Acceso a Helipuerto', 'Membresía Yacht Club', 'Terrazas Frente al Mar']
+        },
+        {
+          id: 'd3',
+          title: 'Yoo Panama',
+          location: 'Avenida Balboa',
+          description: 'Diseño icónico encontrándose con el horizonte del Pacífico.',
+          image: 'https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&q=80&w=1200',
+          fullDescription: 'Inspirado por Starck, Yoo Panama se erige como un faro de diseño y lujo en la Avenida Balboa. Con impresionantes vistas del Océano Pacífico y el Canal de Panamá, estas residencias son una obra maestra de diseño interior caprichoso y arquitectura moderna.',
+          gallery: [
+            'https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&q=80&w=1200',
+            'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&q=80&w=1200',
+            'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&q=80&w=1200'
+          ],
+          highlights: ['Interiores por Phillippe Starck', 'Spa Completo', 'Valet Parking', 'Restaurantes Premiados']
+        },
+        {
+          id: 'd4',
+          title: 'The Reserve',
+          location: 'Santa Maria',
+          description: 'Rodeado de naturaleza y los mejores greens del mundo.',
+          image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200',
+          fullDescription: 'The Reserve es un oasis tranquilo ubicado dentro de Santa Maria, diseñado para familias que valoran la naturaleza y el espacio. Rodeado de exuberante vegetación y los fairways perfectamente cuidados del campo de golf.',
+          gallery: [
+            'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200',
+            'https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&fit=crop&q=80&w=1200',
+            'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=80&w=1200'
+          ],
+          highlights: ['Piscinas Tipo Laguna', 'Senderos para Caminar', 'Parques Infantiles', 'Seguridad 24/7']
+        }
       ]
     },
     properties: {
@@ -132,10 +263,37 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
       ]
     },
     authority: {
-      title: "Arquitectos de Capital",
-      subtitle: "Expertos en Inversión Inmobiliaria Internacional",
-      team: [
-        { name: "Adrian Varela", role: "Estratega Jefe de Inversión", desc: "Cerrando la brecha entre el capital global y las oportunidades más exclusivas de Panamá." }
+      slides: [
+        {
+          title: "Arquitectos de Capital",
+          mainTitle: <>Double <span className="italic font-extralight text-slate-300">the Standard</span></>,
+          description: "Cerrando la brecha entre el capital global y las oportunidades más exclusivas de Panamá.",
+          image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=1200",
+          stats: [
+            { value: "$450M+", label: "Advisory" },
+            { value: "15+", label: "Ciclos de Mercado" }
+          ]
+        },
+        {
+          title: "Alcance Global",
+          mainTitle: <>Conexiones <span className="italic font-extralight text-slate-300">Mundiales</span></>,
+          description: "Accediendo a una extensa red de inversores internacionales y propiedades premium.",
+          image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=1200",
+          stats: [
+            { value: "30+", label: "Países" },
+            { value: "24/7", label: "Disponibilidad" }
+          ]
+        },
+        {
+          title: "Asesoría Élite",
+          mainTitle: <>Perspectiva <span className="italic font-extralight text-slate-300">Estratégica</span></>,
+          description: "Proporcionando información basada en datos para maximizar su potencial de inversión.",
+          image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200",
+          stats: [
+            { value: "12%", label: "Rentabilidad Prom." },
+            { value: "100%", label: "Satisfacción" }
+          ]
+        }
       ]
     },
     missionVision: {

@@ -17,6 +17,9 @@ export interface Development {
   location: string;
   description: string;
   image: string;
+  fullDescription?: string;
+  gallery?: string[];
+  highlights?: string[];
 }
 
 export interface ContentData {
@@ -51,9 +54,13 @@ export interface ContentData {
     steps: { title: string; desc: string }[];
   };
   authority: {
-    title: string;
-    subtitle: string;
-    team: { name: string; role: string; desc: string }[];
+    slides: {
+      title: string;
+      mainTitle: React.ReactNode | string;
+      description: string;
+      image: string;
+      stats: { value: string; label: string }[];
+    }[];
   };
   missionVision: {
     subTitle: string;
