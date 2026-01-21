@@ -17,8 +17,8 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
       cta: "Experience the Difference"
     },
     developments: {
-      title: "The Boldest New Developments",
-      subtitle: "Explore transformative new buildings that elevate modern luxury living in Panama City.",
+      title: "The Boldest Zones",
+      subtitle: "Explore transformative zones that elevate the lifestyle in Panama City.",
       items: [
         {
           id: 'd1',
@@ -181,8 +181,8 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
       cta: "Viva la Diferencia"
     },
     developments: {
-      title: "Los Desarrollos Más Audaces",
-      subtitle: "Explore edificios transformadores que elevan el estilo de vida de lujo moderno en la Ciudad de Panamá.",
+      title: "Las Zonas Más Audaces",
+      subtitle: "Explore zonas transformadoras que elevan el estilo de vida en la Ciudad de Panamá.",
       items: [
         {
           id: 'd1',
