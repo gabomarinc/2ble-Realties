@@ -51,13 +51,11 @@ const Navbar: React.FC<NavbarProps> = ({ lang, toggleLang, navContent }) => {
                         : 'bg-[#0B1221]/40 backdrop-blur-lg border border-white/10 max-w-7xl rounded-full'}
           `}>
                     <div className="flex items-center gap-4">
-                        <div className={`font-serif font-black text-2xl tracking-tighter transition-colors ${scrolled ? 'text-[#0B1221]' : 'text-white'}`}>
-                            PE
-                        </div>
-                        <div className="hidden sm:block">
-                            <span className={`font-serif tracking-[0.4em] text-[8px] uppercase font-bold block ${scrolled ? 'text-[#0B1221]' : 'text-white'}`}>Panama</span>
-                            <span className={`font-serif tracking-[0.4em] text-[8px] uppercase block opacity-60 ${scrolled ? 'text-[#0B1221]' : 'text-white'}`}>Elite</span>
-                        </div>
+                        <img
+                            src={scrolled ? "/logo-blanco.png" : "/logo-negro.png"}
+                            alt="Panama Elite"
+                            className="h-[38px] w-auto object-contain transition-all duration-300"
+                        />
                     </div>
 
                     {/* Desktop Menu */}
@@ -105,10 +103,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, toggleLang, navContent }) => {
             <div className={`fixed inset-0 bg-[#0B1221] z-[60] transition-transform duration-500 ease-in-out ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                 <div className="flex flex-col h-full p-10">
                     <div className="flex justify-between items-center mb-20">
-                        <div>
-                            <span className="font-serif tracking-[0.4em] text-[10px] uppercase font-bold text-white block">Panama</span>
-                            <span className="font-serif tracking-[0.4em] text-[10px] uppercase text-white/60 block">Elite</span>
-                        </div>
+                        <img src="/logo-blanco.png" alt="Panama Elite" className="h-[38px] w-auto object-contain" />
                         <button onClick={() => setMobileMenuOpen(false)} className="text-white">
                             <X size={32} />
                         </button>

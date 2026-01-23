@@ -31,7 +31,7 @@ const Hero: React.FC<HeroProps> = ({ lang }) => {
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
 
                     {/* Left Content */}
-                    <div className="max-w-4xl pt-20 lg:pt-0">
+                    <div className="max-w-4xl pt-20 lg:pt-12">
                         <span className="hero-title inline-block text-champagne tracking-[0.4em] uppercase text-[9px] lg:text-[10px] mb-8 font-bold block pl-1" style={{ transitionDelay: '0.1s' }}>
                             {content.slogan}
                         </span>

@@ -1,4 +1,5 @@
 
+import { ChevronLeft, ChevronRight, Phone } from 'lucide-react';
 import { ContentData } from './types';
 
 export const CONTENT: Record<'en' | 'es', ContentData> = {
@@ -6,7 +7,7 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
     nav: {
       about: "The Vision",
       properties: "Listings",
-      services: "Concierge",
+      developments: "Zones",
       invest: "Investments",
       contact: "Connect"
     },
@@ -22,59 +23,59 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
       items: [
         {
           id: 'd1',
-          title: 'Santa Maria Court',
-          location: 'Costa del Este',
-          description: 'The pinnacle of golf-side residential elegance.',
+          title: 'Panama Pacifico',
+          location: 'Panama West',
+          description: 'Combines nature, modern design, security and sustainability.',
           image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200',
-          fullDescription: 'Santa Maria Court sets a new benchmark for luxury living in Panama. Nestled within the prestigious Santa Maria Golf & Country Club, these residences offer an unparalleled blend of modern sophistication and serene natural beauty. Residents enjoy exclusive access to world-class amenities, including a Jack Nicklaus-designed golf course, making it the ultimate sanctuary for those seeking privacy and prestige.',
+          fullDescription: 'Combines nature, modern design, security and sustainability, with a sense of open spaces and green areas like no other, ideal for those who value quality of life.',
           gallery: [
             'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200',
             'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=1200',
             'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200'
           ],
-          highlights: ['Direct Golf Course Access', 'Private Concierge Service', 'Olympic-sized Pool', 'State-of-the-Art Gym']
+          highlights: ['Master Plan', 'International Airport']
         },
         {
           id: 'd2',
-          title: 'Ocean Reef Villas',
-          location: 'Ocean Reef Islands',
-          description: 'Island living within the city limits. Unmatched privacy.',
+          title: 'Santa Maria',
+          location: 'Costa del Este',
+          description: 'Luxury and nature in one of the most exclusive sectors.',
           image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1200',
-          fullDescription: 'Experience the unique privilege of island living moments from the heart of the city. Ocean Reef Villas offer a private marina lifestyle with spectacular ocean views. This is more than a home; it is a retreat designed for the elite, featuring private yacht slips and an exclusive club dedicated to the finest things in life.',
+          fullDescription: 'One of the most exclusive and sought-after residential sectors in the country where luxury combines with nature, achieving a unique lifestyle.',
           gallery: [
             'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1200',
             'https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?auto=format&fit=crop&q=80&w=1200',
             'https://images.unsplash.com/photo-1613545325278-f24b0cae1224?auto=format&fit=crop&q=80&w=1200'
           ],
-          highlights: ['Private Marina', 'Helipad Access', 'Yacht Club Membership', 'Oceanfront Terraces']
+          highlights: ['Golf Course', 'Private Club']
         },
         {
           id: 'd3',
-          title: 'Yoo Panama',
-          location: 'Avenida Balboa',
-          description: 'Iconic design meeting the Pacific Ocean horizon.',
+          title: 'Panama City',
+          location: 'Panama City',
+          description: 'Vibrant, modern and cultural lifestyle.',
           image: 'https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&q=80&w=1200',
-          fullDescription: 'Inspired by Starck, Yoo Panama stands as a beacon of design and luxury on Avenida Balboa. With breathtaking views of the Pacific Ocean and the Panama Canal, these residences are a masterpiece of whimsical interior design and modern architecture, providing a vibrant and sophisticated lifestyle.',
+          fullDescription: 'Vibrant lifestyle close to everything, with first-world infrastructure and services, making it a modern city with great cultural wealth.',
           gallery: [
             'https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&q=80&w=1200',
             'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&q=80&w=1200',
             'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&q=80&w=1200'
           ],
-          highlights: ['Interiors by Phillippe Starck', 'Full-Service Spa', 'Valet Parking', 'Award-Winning Restaurants']
+          highlights: ['Global connectivity', 'Financial and logistics hub']
         },
         {
           id: 'd4',
-          title: 'The Reserve',
-          location: 'Santa Maria',
-          description: 'Surrounded by nature and the worlds finest greens.',
+          title: 'Investment',
+          location: 'Panama',
+          description: 'The best country to invest and retire.',
           image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200',
-          fullDescription: 'The Reserve is a tranquil oasis located within Santa Maria, designed for families who value nature and space. Surrounded by lush greenery and the perfectly manicured fairways of the golf course, it offers a peaceful respite from the city with lagoon-style pools and walking trails.',
+          fullDescription: 'Considered the best country to invest and retire thanks to its stable and dollarized economy, becoming one of the real estate markets with the highest demand.',
           gallery: [
             'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200',
             'https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&fit=crop&q=80&w=1200',
             'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=80&w=1200'
           ],
-          highlights: ['Lagoon Pools', 'Walking Trails', 'Playgrounds', '24/7 Security']
+          highlights: ['High appreciation', 'Dynamic real estate market', 'High demand']
         }
       ]
     },
@@ -103,31 +104,46 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
         {
           title: "Architects of Capital",
           mainTitle: <>Double <span className="italic font-extralight text-slate-300">the Standard</span></>,
-          description: "Bridging the gap between global capital and Panama's most exclusive opportunities.",
-          image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=1200",
+          description: "Swipe to meet the experts redefining the standard of luxury real estate.",
+          image: "/logos.png",
+          logoOverlay: false,
           stats: [
-            { value: "$450M+", label: "Advisory" },
-            { value: "15+", label: "Market Cycles" }
+            { value: "10+", label: "Years Experience" },
+            { value: "$75M+", label: "In Sales" },
+            { value: "250+", label: "Homes" }
           ]
         },
         {
           title: "Global Reach",
-          mainTitle: <>Worldwide <span className="italic font-extralight text-slate-300">Connections</span></>,
+          mainTitle: <>Jonathan<br /><span className="italic font-extralight text-slate-300">Valverde</span></>,
           description: "Accessing an extensive network of international investors and premium properties.",
-          image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=1200",
+          image: "/foto-jonathan.jpg",
           stats: [
-            { value: "30+", label: "Countries" },
-            { value: "24/7", label: "Availability" }
+            {
+              value: <div className="flex items-center gap-4 text-3xl lg:text-4xl"><Phone className="w-8 h-8 lg:w-10 lg:h-10 text-champagne" /> <span>+507 6314-5710</span></div>,
+            }
           ]
         },
         {
           title: "Elite Advisory",
-          mainTitle: <>Strategic <span className="italic font-extralight text-slate-300">Insight</span></>,
+          mainTitle: <>Yiniva<br /><span className="italic font-extralight text-slate-300">Cedeño</span></>,
           description: "Providing data-driven insights to maximize your investment potential.",
-          image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200",
+          image: "/foto-yiniva.jpg",
           stats: [
-            { value: "12%", label: "Avg. Yield" },
-            { value: "100%", label: "Satisfaction" }
+            {
+              value: <div className="flex items-center gap-4 text-3xl lg:text-4xl"><Phone className="w-8 h-8 lg:w-10 lg:h-10 text-champagne" /> <span>+507 6763-5522</span></div>,
+            }
+          ]
+        },
+        {
+          title: "New Section",
+          mainTitle: <>Prospero<br /><span className="italic font-extralight text-slate-300">Lasso</span></>,
+          description: "Placeholder text for the fourth section. Description goes here.",
+          image: "/foto-prospero.jpg",
+          stats: [
+            {
+              value: <div className="flex items-center gap-4 text-3xl lg:text-4xl"><Phone className="w-8 h-8 lg:w-10 lg:h-10 text-champagne" /> <span>+507 6280-1439</span></div>,
+            }
           ]
         }
       ]
@@ -164,13 +180,24 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
       email: "Email Address",
       message: "How can we elevate your portfolio?",
       submit: "Send Inquiry"
+    },
+    ui: {
+      premiumAsset: "Premium Asset",
+      discoverMore: "Discover More",
+      keyFeatures: "Key Features",
+      gallery: "Gallery",
+      inquireInterest: "Inquire Interest",
+      privatePortfolio: "Private Portfolio",
+      clickInquiry: "Click for inquiry",
+      curated: "100% Curated",
+      since2010: "Since 2010"
     }
   },
   es: {
     nav: {
       about: "La Visión",
       properties: "Propiedades",
-      services: "Conserjería",
+      developments: "Zonas",
       invest: "Inversiones",
       contact: "Conectar"
     },
@@ -186,59 +213,59 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
       items: [
         {
           id: 'd1',
-          title: 'Santa Maria Court',
-          location: 'Costa del Este',
-          description: 'El pináculo de la elegancia residencial frente al golf.',
+          title: 'Panamá Pacífico',
+          location: 'Panamá Oeste',
+          description: 'Combina naturaleza, diseño moderno, seguridad y sostenibilidad.',
           image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200',
-          fullDescription: 'Santa Maria Court establece un nuevo estándar para la vida de lujo en Panamá. Ubicado dentro del prestigioso Santa Maria Golf & Country Club, estas residencias ofrecen una mezcla inigualable de sofisticación moderna y belleza natural. Los residentes disfrutan de acceso exclusivo a amenidades de clase mundial, incluyendo un campo de golf diseñado por Jack Nicklaus.',
+          fullDescription: 'Combina naturaleza, diseño moderno, seguridad y sostenibilidad, con una sensación de espacios abiertos y áreas verdes como ninguna otra, ideal para los que valoran calidad de vida.',
           gallery: [
             'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200',
             'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=1200',
             'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200'
           ],
-          highlights: ['Acceso Directo al Golf', 'Servicio de Conserjería', 'Piscina Olímpica', 'Gimnasio de Alta Gama']
+          highlights: ['Master Plan', 'Aeropuerto internacional']
         },
         {
           id: 'd2',
-          title: 'Ocean Reef Villas',
-          location: 'Ocean Reef Islands',
-          description: 'Vida isleña dentro de los límites de la ciudad. Privacidad inigualable.',
+          title: 'Santa María',
+          location: 'Costa del Este',
+          description: 'Lujo y naturaleza en uno de los sectores más exclusivos.',
           image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1200',
-          fullDescription: 'Experimente el privilegio único de la vida en una isla a minutos del corazón de la ciudad. Ocean Reef Villas ofrece un estilo de vida de marina privada con vistas espectaculares al océano. Esto es más que un hogar; es un refugio diseñado para la élite, con muelles privados y un club exclusivo.',
+          fullDescription: 'Uno de los sectores residenciales mas exclusivos y cotizados del país donde se combina el lujo con la naturaleza, logrando un estilo de vida único.',
           gallery: [
             'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1200',
             'https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?auto=format&fit=crop&q=80&w=1200',
             'https://images.unsplash.com/photo-1613545325278-f24b0cae1224?auto=format&fit=crop&q=80&w=1200'
           ],
-          highlights: ['Marina Privada', 'Acceso a Helipuerto', 'Membresía Yacht Club', 'Terrazas Frente al Mar']
+          highlights: ['Cancha de Golf', 'Club Privado']
         },
         {
           id: 'd3',
-          title: 'Yoo Panama',
-          location: 'Avenida Balboa',
-          description: 'Diseño icónico encontrándose con el horizonte del Pacífico.',
+          title: 'Ciudad de Panamá',
+          location: 'Ciudad de Panamá',
+          description: 'Estilo de vida vibrante, moderno y cultural.',
           image: 'https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&q=80&w=1200',
-          fullDescription: 'Inspirado por Starck, Yoo Panama se erige como un faro de diseño y lujo en la Avenida Balboa. Con impresionantes vistas del Océano Pacífico y el Canal de Panamá, estas residencias son una obra maestra de diseño interior caprichoso y arquitectura moderna.',
+          fullDescription: 'Estilo de vida vibrante y cerca de todo, con infraestructura y servicios de primer mundo, convirtiéndola en una ciudad moderna y de gran riqueza cultural.',
           gallery: [
             'https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&q=80&w=1200',
             'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&q=80&w=1200',
             'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&q=80&w=1200'
           ],
-          highlights: ['Interiores por Phillippe Starck', 'Spa Completo', 'Valet Parking', 'Restaurantes Premiados']
+          highlights: ['Conectividad global', 'Hub financiero y logistico']
         },
         {
           id: 'd4',
-          title: 'The Reserve',
-          location: 'Santa Maria',
-          description: 'Rodeado de naturaleza y los mejores greens del mundo.',
+          title: 'Inversión',
+          location: 'Panamá',
+          description: 'El mejor país para invertir y retirarse.',
           image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200',
-          fullDescription: 'The Reserve es un oasis tranquilo ubicado dentro de Santa Maria, diseñado para familias que valoran la naturaleza y el espacio. Rodeado de exuberante vegetación y los fairways perfectamente cuidados del campo de golf.',
+          fullDescription: 'Considerado el mejor país para invertir y retirarse gracias a su economía estable y dolarizada, convirtiéndose en unos de los mercados con mayor demanda en bienes raíces.',
           gallery: [
             'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200',
             'https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&fit=crop&q=80&w=1200',
             'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=80&w=1200'
           ],
-          highlights: ['Piscinas Tipo Laguna', 'Senderos para Caminar', 'Parques Infantiles', 'Seguridad 24/7']
+          highlights: ['Alta valorización', 'Mercado inmobiliario dinámico', 'Alta demanda']
         }
       ]
     },
@@ -267,31 +294,46 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
         {
           title: "Arquitectos de Capital",
           mainTitle: <>Double <span className="italic font-extralight text-slate-300">the Standard</span></>,
-          description: "Cerrando la brecha entre el capital global y las oportunidades más exclusivas de Panamá.",
-          image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=1200",
+          description: "Deslice para conocer a los expertos que redefinen el estándar del lujo inmobiliario.",
+          image: "/logos.png",
+          logoOverlay: false,
           stats: [
-            { value: "$450M+", label: "Advisory" },
-            { value: "15+", label: "Ciclos de Mercado" }
+            { value: "10+", label: "Años de Experiencia" },
+            { value: "$75M+", label: "En Ventas" },
+            { value: "250+", label: "Hogares" }
           ]
         },
         {
           title: "Alcance Global",
-          mainTitle: <>Conexiones <span className="italic font-extralight text-slate-300">Mundiales</span></>,
+          mainTitle: <>Jonathan<br /><span className="italic font-extralight text-slate-300">Valverde</span></>,
           description: "Accediendo a una extensa red de inversores internacionales y propiedades premium.",
-          image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=1200",
+          image: "/foto-jonathan.jpg",
           stats: [
-            { value: "30+", label: "Países" },
-            { value: "24/7", label: "Disponibilidad" }
+            {
+              value: <div className="flex items-center gap-4 text-3xl lg:text-4xl"><Phone className="w-8 h-8 lg:w-10 lg:h-10 text-champagne" /> <span>+507 6314-5710</span></div>,
+            }
           ]
         },
         {
           title: "Asesoría Élite",
-          mainTitle: <>Perspectiva <span className="italic font-extralight text-slate-300">Estratégica</span></>,
+          mainTitle: <>Yiniva<br /><span className="italic font-extralight text-slate-300">Cedeño</span></>,
           description: "Proporcionando información basada en datos para maximizar su potencial de inversión.",
-          image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200",
+          image: "/foto-yiniva.jpg",
           stats: [
-            { value: "12%", label: "Rentabilidad Prom." },
-            { value: "100%", label: "Satisfacción" }
+            {
+              value: <div className="flex items-center gap-4 text-3xl lg:text-4xl"><Phone className="w-8 h-8 lg:w-10 lg:h-10 text-champagne" /> <span>+507 6763-5522</span></div>,
+            }
+          ]
+        },
+        {
+          title: "Nueva Sección",
+          mainTitle: <>Prospero<br /><span className="italic font-extralight text-slate-300">Lasso</span></>,
+          description: "Texto de ejemplo para la cuarta sección. Aquí puedes colocar la descripción que desees.",
+          image: "/foto-prospero.jpg",
+          stats: [
+            {
+              value: <div className="flex items-center gap-4 text-3xl lg:text-4xl"><Phone className="w-8 h-8 lg:w-10 lg:h-10 text-champagne" /> <span>+507 6280-1439</span></div>,
+            }
           ]
         }
       ]
@@ -328,6 +370,17 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
       email: "Correo Electrónico",
       message: "¿Cómo podemos elevar su portafolio?",
       submit: "Enviar Consulta"
+    },
+    ui: {
+      premiumAsset: "Activo Premium",
+      discoverMore: "Descubrir Más",
+      keyFeatures: "Características Clave",
+      gallery: "Galería",
+      inquireInterest: "Solicitar Información",
+      privatePortfolio: "Portafolio Privado",
+      clickInquiry: "Clic para consultar",
+      curated: "100% Curado",
+      since2010: "Desde 2010"
     }
   }
 };

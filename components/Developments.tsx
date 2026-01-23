@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { createPortal } from 'react-dom';
 import { ArrowRight, MapPin, X } from 'lucide-react';
 import { CONTENT } from '../constants';
 import { Language, Development } from '../types';
@@ -9,6 +10,7 @@ interface DevelopmentsProps {
 
 const Developments: React.FC<DevelopmentsProps> = ({ lang }) => {
     const content = CONTENT[lang].developments;
+    const ui = CONTENT[lang].ui;
     const [selectedItem, setSelectedItem] = useState<Development | null>(null);
 
     return (
@@ -33,7 +35,7 @@ const Developments: React.FC<DevelopmentsProps> = ({ lang }) => {
                     >
                         <img src={item.image} alt={item.title} loading="lazy" />
                         <div className="gallery-content">
-                            <span className="text-champagne text-[9px] uppercase tracking-[0.6em] font-black mb-2 block">Premium Asset</span>
+                            <span className="text-champagne text-[9px] uppercase tracking-[0.6em] font-black mb-2 block">{ui.premiumAsset}</span>
                             <h3 className="text-white text-3xl lg:text-4xl font-serif mb-4 leading-none">{item.title}</h3>
                             <div className="flex items-center gap-3 text-white/60 mb-6">
                                 <MapPin size={14} className="text-champagne" />
@@ -41,7 +43,7 @@ const Developments: React.FC<DevelopmentsProps> = ({ lang }) => {
                             </div>
                             <p className="text-white/70 font-light text-sm mb-8 max-w-xs">{item.description}</p>
                             <div className="flex items-center gap-3 text-white text-[9px] uppercase tracking-widest font-black group-hover:gap-5 transition-all">
-                                Discover More <ArrowRight size={16} />
+                                {ui.discoverMore} <ArrowRight size={16} />
                             </div>
                         </div>
                     </div>
@@ -49,7 +51,7 @@ const Developments: React.FC<DevelopmentsProps> = ({ lang }) => {
             </div>
 
             {/* MODAL */}
-            {selectedItem && (
+            {selectedItem && createPortal(
                 <div className="fixed inset-0 z-[100] flex items-center justify-center px-4">
                     {/* Backdrop */}
                     <div
@@ -58,7 +60,7 @@ const Developments: React.FC<DevelopmentsProps> = ({ lang }) => {
                     ></div>
 
                     {/* Modal Content */}
-                    <div className="relative bg-white w-full max-w-[70rem] max-h-[85vh] overflow-y-auto rounded-[30px] shadow-2xl animate-in zoom-in-95 duration-300 scrollbar-hide">
+                    <div className="relative bg-white w-full max-w-[70rem] max-h-[85vh] overflow-y-auto rounded-[30px] shadow-2xl animate-zoom-center scrollbar-hide">
 
                         {/* Close Button */}
                         <button
@@ -100,7 +102,7 @@ const Developments: React.FC<DevelopmentsProps> = ({ lang }) => {
                                 {/* Highlights */}
                                 {selectedItem.highlights && (
                                     <div className="mb-12">
-                                        <h4 className="text-xs font-black uppercase tracking-widest text-navy mb-6">Key Features</h4>
+                                        <h4 className="text-xs font-black uppercase tracking-widest text-navy mb-6">{ui.keyFeatures}</h4>
                                         <div className="grid grid-cols-2 gap-4">
                                             {selectedItem.highlights.map((highlight, idx) => (
                                                 <div key={idx} className="flex items-center gap-3 text-slate-500">
@@ -115,7 +117,7 @@ const Developments: React.FC<DevelopmentsProps> = ({ lang }) => {
                                 {/* Mini Gallery */}
                                 {selectedItem.gallery && (
                                     <div>
-                                        <h4 className="text-xs font-black uppercase tracking-widest text-navy mb-6">Gallery</h4>
+                                        <h4 className="text-xs font-black uppercase tracking-widest text-navy mb-6">{ui.gallery}</h4>
                                         <div className="grid grid-cols-3 gap-3">
                                             {selectedItem.gallery.map((img, idx) => (
                                                 <div key={idx} className="aspect-square rounded-xl overflow-hidden cursor-pointer hover:opacity-90 transition-opacity">
@@ -128,13 +130,14 @@ const Developments: React.FC<DevelopmentsProps> = ({ lang }) => {
 
                                 <div className="mt-12 pt-8 border-t border-slate-100 flex justify-end">
                                     <button className="bg-navy text-white px-8 py-4 rounded-full font-medium hover:bg-champagne transition-colors flex items-center gap-2">
-                                        Inquire Interest <ArrowRight size={18} />
+                                        {ui.inquireInterest} <ArrowRight size={18} />
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>,
+                document.body
             )}
         </section>
     );

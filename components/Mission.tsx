@@ -16,7 +16,7 @@ const Mission: React.FC<MissionProps> = ({ lang }) => {
     const content = CONTENT[lang].missionVision;
 
     return (
-        <section className="bg-navy py-24 lg:py-32 relative overflow-hidden">
+        <section id="about" className="bg-navy py-24 lg:py-32 relative overflow-hidden">
             <div className="container mx-auto px-6 lg:px-10">
 
                 {/* Header */}

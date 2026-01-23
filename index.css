@@ -23,6 +23,7 @@ h3,
   font-family: 'Playfair Display', serif;
 }
 
+
 /* SUPER FAST REVEAL ENGINE */
 .reveal {
   opacity: 0;
@@ -182,4 +183,38 @@ h3,
 .animate-float-delayed {
   animation: float 8s ease-in-out infinite;
   animation-delay: 1s;
+}
+
+/* Modal Zoom Animation */
+@keyframes zoomCenter {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-zoom-center {
+  animation: zoomCenter 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Slide Animations */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }

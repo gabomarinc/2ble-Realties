@@ -26,7 +26,7 @@ export interface ContentData {
   nav: {
     about: string;
     properties: string;
-    services: string;
+    developments: string;
     invest: string;
     contact: string;
   };
@@ -59,7 +59,8 @@ export interface ContentData {
       mainTitle: React.ReactNode | string;
       description: string;
       image: string;
-      stats: { value: string; label: string }[];
+      logoOverlay?: boolean;
+      stats: { value: string | React.ReactNode; label?: string }[];
     }[];
   };
   missionVision: {
@@ -84,5 +85,16 @@ export interface ContentData {
     email: string;
     message: string;
     submit: string;
+  };
+  ui: {
+    premiumAsset: string;
+    discoverMore: string;
+    keyFeatures: string;
+    gallery: string;
+    inquireInterest: string;
+    privatePortfolio: string;
+    clickInquiry: string;
+    curated: string;
+    since2010: string;
   };
 }

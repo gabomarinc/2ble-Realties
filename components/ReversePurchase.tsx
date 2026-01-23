@@ -7,9 +7,12 @@ interface ReversePurchaseProps {
     content: ContentData['reversePurchase'];
 }
 
-const ReversePurchase: React.FC<ReversePurchaseProps> = ({ content }) => {
+import { CONTENT } from '../constants';
+
+const ReversePurchase: React.FC<ReversePurchaseProps> = ({ lang, content }) => {
+    const ui = CONTENT[lang].ui;
     return (
-        <section className="py-24 lg:py-32 bg-slate-50 relative overflow-hidden">
+        <section id="invest" className="py-24 lg:py-32 bg-slate-50 relative overflow-hidden">
             <div className="container mx-auto px-6 lg:px-10">
                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
@@ -45,7 +48,7 @@ const ReversePurchase: React.FC<ReversePurchaseProps> = ({ content }) => {
                             <div className="absolute -bottom-1 -right-1 bg-navy p-6 lg:p-10 rounded-tl-[30px] lg:rounded-tl-[40px] shadow-2xl z-10 apple-reveal" style={{ transitionDelay: '0.5s' }}>
                                 <div className="flex flex-col items-center gap-2 lg:gap-4 text-center">
                                     <Search className="text-champagne w-6 h-6 lg:w-8 lg:h-8" strokeWidth={2} />
-                                    <span className="text-white font-serif text-lg lg:text-xl italic">100% Curated</span>
+                                    <span className="text-white font-serif text-lg lg:text-xl italic">{ui.curated}</span>
                                 </div>
                             </div>
                         </div>

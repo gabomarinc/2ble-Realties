@@ -9,6 +9,7 @@ interface PropertiesProps {
 
 const Properties: React.FC<PropertiesProps> = ({ lang }) => {
     const content = CONTENT[lang].properties;
+    const ui = CONTENT[lang].ui;
 
     return (
         <section id="properties" className="bg-white py-24 lg:py-40 reveal border-t border-slate-50">
@@ -16,7 +17,7 @@ const Properties: React.FC<PropertiesProps> = ({ lang }) => {
                 <div className="mb-16 lg:mb-24">
                     <div className="flex items-center gap-4 mb-6 lg:mb-8">
                         <div className="w-12 h-[1px] bg-champagne"></div>
-                        <span className="text-champagne font-black tracking-[0.5em] uppercase text-[10px] apple-reveal" style={{ transitionDelay: '0.1s' }}>Private Portfolio</span>
+                        <span className="text-champagne font-black tracking-[0.5em] uppercase text-[10px] apple-reveal" style={{ transitionDelay: '0.1s' }}>{ui.privatePortfolio}</span>
                     </div>
                     <h2 className="text-5xl md:text-8xl font-serif text-navy leading-none mb-6 apple-reveal" style={{ transitionDelay: '0.2s' }}>
                         {content.title}
@@ -33,7 +34,7 @@ const Properties: React.FC<PropertiesProps> = ({ lang }) => {
                             <div className="aspect-[3/4] overflow-hidden rounded-[50px] relative mb-10 shadow-2xl">
                                 <img src={property.image} alt={property.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
                                 <div className="absolute inset-0 bg-navy/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-12">
-                                    <p className="text-champagne text-[9px] uppercase tracking-[0.5em] font-black mb-4">Click for inquiry</p>
+                                    <p className="text-champagne text-[9px] uppercase tracking-[0.5em] font-black mb-4">{ui.clickInquiry}</p>
                                     <h4 className="text-white text-3xl font-serif">{property.price}</h4>
                                 </div>
                                 <div className="absolute top-8 left-8">
