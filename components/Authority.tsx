@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import React from 'react';
 import { CONTENT } from '../constants';
 import { Language } from '../types';
 
@@ -10,122 +9,86 @@ interface AuthorityProps {
 const Authority: React.FC<AuthorityProps> = ({ lang }) => {
     const content = CONTENT[lang].authority;
     const ui = CONTENT[lang].ui;
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const [isPaused, setIsPaused] = useState(false);
 
-    const nextSlide = () => {
-        setCurrentIndex((prev) => (prev + 1) % content.slides.length);
-    };
-
-    const prevSlide = () => {
-        setCurrentIndex((prev) => (prev - 1 + content.slides.length) % content.slides.length);
-    };
-
-    const currentSlide = content.slides[currentIndex];
-
-    // Reset loop when language changes
-    useEffect(() => {
-        setCurrentIndex(0);
-    }, [lang]);
-
-    // Auto-slide functionality
-    useEffect(() => {
-        if (!isPaused) {
-            const interval = setInterval(() => {
-                nextSlide();
-            }, 5000);
-            return () => clearInterval(interval);
-        }
-    }, [isPaused, content.slides.length]);
+    // Separate the first slide (Header/Intro) from the rest (Team Members)
+    const [intro, ...teamMembers] = content.slides;
 
     return (
         <section
             id="team"
-            className="py-24 lg:py-40 bg-white border-t border-slate-50 relative group/section"
-            onMouseEnter={() => setIsPaused(true)}
-            onMouseLeave={() => setIsPaused(false)}
+            className="py-24 lg:py-40 bg-white border-t border-slate-50 relative"
         >
-            {/* Navigation Buttons - Visible on hover/always on mobile */}
-            <button
-                onClick={prevSlide}
-                className="absolute left-4 lg:left-10 top-1/2 -translate-y-1/2 z-20 bg-white/80 backdrop-blur-sm p-4 rounded-full shadow-lg hover:bg-white hover:scale-110 transition-all border border-slate-100 text-navy hidden group-hover/section:block lg:group-hover/section:block"
-                aria-label="Previous slide"
-            >
-                <ChevronLeft size={24} />
-            </button>
-            <button
-                onClick={nextSlide}
-                className="absolute right-4 lg:right-10 top-1/2 -translate-y-1/2 z-20 bg-white/80 backdrop-blur-sm p-4 rounded-full shadow-lg hover:bg-white hover:scale-110 transition-all border border-slate-100 text-navy hidden group-hover/section:block lg:group-hover/section:block"
-                aria-label="Next slide"
-            >
-                <ChevronRight size={24} />
-            </button>
-
-
             <div className="container mx-auto px-6 lg:px-10">
-                <div key={currentIndex} className="animate-slide-in-right grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+                {/* Intro Section - "Double the Standard" */}
+                <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center mb-20 lg:mb-32">
                     <div className="reveal order-2 lg:order-1 parallax-container reveal-active">
                         <div className="rounded-[40px] lg:rounded-[60px] overflow-hidden shadow-2xl aspect-[4/5] mx-auto lg:mx-0 max-w-md lg:max-w-none relative">
-                            {/* Image Overlay Gradient */}
                             <div className="absolute inset-0 bg-gradient-to-t from-navy/30 to-transparent z-10"></div>
-                            {currentSlide.image === '/logos.png' ? (
-                                <div className="w-full h-full bg-white p-12 flex items-center justify-center">
-                                    <img
-                                        src={currentSlide.image}
-                                        className="w-full h-auto rounded-[30px] shadow-sm object-contain"
-                                        loading="lazy"
-                                        alt={currentSlide.title}
-                                    />
-                                </div>
-                            ) : (
+                            <div className="w-full h-full bg-white p-12 flex items-center justify-center">
                                 <img
-                                    src={currentSlide.image}
-                                    className="w-full h-full object-cover grayscale brightness-90 contrast-[1.1] transition-transform duration-[1.5s]"
+                                    src={intro.image}
+                                    className="w-full h-auto rounded-[30px] shadow-sm object-contain"
                                     loading="lazy"
-                                    alt={currentSlide.title}
+                                    alt={intro.title}
                                 />
-                            )}
-                            {/* Logo Overlay */}
-                            {currentSlide.logoOverlay && (
-                                <div className="absolute bottom-8 left-8 bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-[2rem] shadow-2xl animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">
-                                    <div className="w-16 h-16 flex items-center justify-center">
-                                        <img src="/logo.png" alt="Panama Elite" className="w-full h-full object-contain brightness-0 invert opacity-90" />
-                                    </div>
-                                    <div className="mt-2 text-[10px] text-white/80 font-black tracking-widest uppercase text-center">{ui.since2010}</div>
-                                </div>
-                            )}
+                            </div>
                         </div>
                     </div>
                     <div className="reveal order-1 lg:order-2 reveal-active">
                         <span className="inline-block text-champagne font-black tracking-[0.5em] uppercase text-[10px] lg:text-[11px] mb-8 lg:mb-10 block">
-                            {currentSlide.title}
+                            {intro.title}
                         </span>
                         <h3 className="text-5xl md:text-8xl font-serif text-navy leading-none mb-8 lg:mb-12">
-                            {currentSlide.mainTitle}
+                            {intro.mainTitle}
                         </h3>
                         <p className="text-slate-500 text-lg lg:text-2xl leading-relaxed font-light italic border-l-4 border-champagne pl-6 lg:pl-10 mb-10 lg:mb-16">
-                            {currentSlide.description}
+                            {intro.description}
                         </p>
                         <div className="flex gap-12 lg:gap-20">
-                            {currentSlide.stats.map((stat, idx) => (
+                            {intro.stats.map((stat, idx) => (
                                 <div key={idx}>
                                     <div className="text-4xl lg:text-5xl font-serif text-navy mb-3">{stat.value}</div>
                                     {stat.label && <p className="text-[9px] uppercase tracking-widest text-slate-400 font-black">{stat.label}</p>}
                                 </div>
                             ))}
                         </div>
-                        {/* Slide Indicators */}
-                        <div className="flex gap-3 mt-12">
-                            {content.slides.map((_, idx) => (
-                                <button
-                                    key={idx}
-                                    onClick={() => setCurrentIndex(idx)}
-                                    className={`h-1 duration-300 transition-all ${idx === currentIndex ? 'w-12 bg-champagne' : 'w-4 bg-slate-200 hover:bg-slate-300'}`}
-                                    aria-label={`Go to slide ${idx + 1}`}
-                                />
-                            ))}
-                        </div>
                     </div>
+                </div>
+
+                {/* Team Grid */}
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+                    {teamMembers.map((member, index) => (
+                        <div key={index} className="group bg-slate-50 rounded-[40px] p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                            <div className="rounded-[30px] overflow-hidden aspect-[4/5] mb-8 relative">
+                                <img
+                                    src={member.image}
+                                    alt={member.title} // Ideally this should be the name if available as string, but title serves as alt text for now
+                                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+
+                            <div className="px-2">
+                                <span className="text-champagne font-bold tracking-widest uppercase text-[10px] mb-3 block">
+                                    {member.title}
+                                </span>
+                                <h4 className="text-3xl font-serif text-navy mb-4 leading-tight">
+                                    {member.mainTitle}
+                                </h4>
+                                <p className="text-slate-500 text-sm leading-relaxed font-light mb-6 border-l-2 border-slate-200 pl-4">
+                                    {member.description}
+                                </p>
+
+                                <div className="pt-4 border-t border-slate-200/50">
+                                    {member.stats.map((stat, idx) => (
+                                        <div key={idx} className="text-navy">
+                                            {stat.value}
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </div>
         </section>
