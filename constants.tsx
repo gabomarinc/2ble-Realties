@@ -203,7 +203,7 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
     },
     hero: {
       slogan: "Double the Standard",
-      title: "INVIERTE EN PANAMÁ",
+      title: <><i className="font-serif italic text-white/80 font-light">Invierte</i> en Panamá</>,
       subtitle: "Más allá de metros cuadrados, nuestra visión es encontrar junto a ti esa inversión inteligente con un retorno inmediato.",
       cta: "Viva la Diferencia"
     },
