@@ -208,8 +208,8 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
       cta: "Viva la Diferencia"
     },
     developments: {
-      title: "Las Zonas Más Audaces",
-      subtitle: "Explore zonas transformadoras que elevan el estilo de vida en la Ciudad de Panamá.",
+      title: "Las zonas más exclusivas",
+      subtitle: "Ya sea en la ciudad o en las afueras, encontramos siempre lo mejor para ti.",
       items: [
         {
           id: 'd1',
