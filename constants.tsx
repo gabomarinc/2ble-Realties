@@ -294,13 +294,13 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
         {
           title: "Arquitectos de Capital",
           mainTitle: <>Double <span className="italic font-extralight text-slate-300">the Standard</span></>,
-          description: "Deslice para conocer a los expertos que redefinen el estándar del lujo inmobiliario.",
+          description: "Aquí encontrarás a los expertos que te guiarán en cada paso que des.",
           image: "/logos.png",
           logoOverlay: false,
           stats: [
-            { value: "10+", label: "Años de Experiencia" },
-            { value: "$75M+", label: "En Ventas" },
-            { value: "250+", label: "Hogares" }
+            { value: "+10", label: "Años de Experiencia" },
+            { value: "+$75M", label: "En Ventas" },
+            { value: "+250", label: "Hogares" }
           ]
         },
         {
