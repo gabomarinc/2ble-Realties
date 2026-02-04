@@ -230,7 +230,7 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           title: 'Santa María',
           location: 'Costa del Este',
           description: 'Lujo y naturaleza en uno de los sectores más exclusivos.',
-          image: '/fotos-2bleweb/Santa Maria/portada.webp',
+          image: '/fotos-2bleweb/Santa Maria/portada.jpg',
           fullDescription: 'Uno de los sectores residenciales mas exclusivos y cotizados del país donde se combina el lujo con la naturaleza, logrando un estilo de vida único.',
           gallery: [
             { image: '/fotos-2bleweb/Santa Maria/bosco-475.jpg', title: 'Bosco', price: 'Desde $475.000' },
