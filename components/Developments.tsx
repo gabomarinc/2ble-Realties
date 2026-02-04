@@ -12,7 +12,7 @@ const Developments: React.FC<DevelopmentsProps> = ({ lang }) => {
     const content = CONTENT[lang].developments;
     const ui = CONTENT[lang].ui;
     const [selectedItem, setSelectedItem] = useState<Development | null>(null);
-    const [lightboxImage, setLightboxImage] = useState<string | null>(null);
+    const [lightboxItem, setLightboxItem] = useState<{ image: string; title: string; price: string } | null>(null);
 
     return (
         <section id="developments" className="bg-white py-24 lg:py-40 reveal text-navy">
@@ -130,7 +130,7 @@ const Developments: React.FC<DevelopmentsProps> = ({ lang }) => {
                                                     <div
                                                         key={idx}
                                                         className="group cursor-pointer"
-                                                        onClick={() => setLightboxImage(imgSrc)}
+                                                        onClick={() => setLightboxItem({ image: imgSrc, title: imgTitle, price: imgPrice })}
                                                     >
                                                         <div className="aspect-video rounded-xl overflow-hidden mb-3 relative">
                                                             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors z-10"></div>
@@ -162,18 +162,26 @@ const Developments: React.FC<DevelopmentsProps> = ({ lang }) => {
             )}
 
             {/* LIGHTBOX */}
-            {lightboxImage && createPortal(
-                <div className="fixed inset-0 z-[110] flex items-center justify-center bg-black/95 backdrop-blur-sm animate-in fade-in duration-300" onClick={() => setLightboxImage(null)}>
+            {lightboxItem && createPortal(
+                <div className="fixed inset-0 z-[110] flex items-center justify-center bg-black/95 backdrop-blur-sm animate-in fade-in duration-300" onClick={() => setLightboxItem(null)}>
                     <button
                         className="absolute top-6 right-6 z-20 text-white/50 hover:text-white p-2 transition-colors"
                     >
                         <X size={40} />
                     </button>
-                    <img
-                        src={lightboxImage}
-                        alt="Full View"
-                        className="max-w-[95vw] max-h-[95vh] object-contain rounded-2xl shadow-2xl animate-zoom-in"
-                    />
+                    <div className="relative max-w-[95vw] max-h-[95vh] flex flex-col items-center">
+                        <img
+                            src={lightboxItem.image}
+                            alt={lightboxItem.title || "Full View"}
+                            className="max-w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl animate-zoom-in"
+                        />
+                        {(lightboxItem.title || lightboxItem.price) && (
+                            <div className="mt-4 text-center animate-in fade-in slide-in-from-bottom-4 duration-500 delay-150">
+                                <h3 className="text-white text-2xl font-serif mb-1">{lightboxItem.title}</h3>
+                                <p className="text-champagne text-lg font-light tracking-widest">{lightboxItem.price}</p>
+                            </div>
+                        )}
+                    </div>
                 </div>,
                 document.body
             )}
