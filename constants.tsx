@@ -259,12 +259,13 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           title: 'Inversión',
           location: 'Panamá',
           description: 'El mejor país para invertir y retirarse.',
-          image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200',
+          image: '/fotos-2bleweb/Inversion/portada-nautilus-205.jpg',
           fullDescription: 'Considerado el mejor país para invertir y retirarse gracias a su economía estable y dolarizada, convirtiéndose en unos de los mercados con mayor demanda en bienes raíces.',
           gallery: [
-            'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200',
-            'https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&fit=crop&q=80&w=1200',
-            'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=80&w=1200'
+            { image: '/fotos-2bleweb/Inversion/portada-nautilus-205.jpg', title: 'Nautilus', price: 'Desde $205.000' },
+            { image: '/fotos-2bleweb/Inversion/boquete-pino-alto-224.jpg', title: 'Pino Alto (Boquete)', price: 'Desde $224.000' },
+            { image: '/fotos-2bleweb/Inversion/the-westin-residences-424.jpg', title: 'The Westin Residences', price: 'Desde $424.000' },
+            { image: '/fotos-2bleweb/Inversion/the-westin-residences-424-2.jpg', title: 'The Westin Sembrador', price: 'Desde $424.000' }
           ],
           highlights: ['Alta valorización', 'Mercado inmobiliario dinámico', 'Alta demanda']
         }
