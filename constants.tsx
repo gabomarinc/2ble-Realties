@@ -90,6 +90,14 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
       ]
     },
     reversePurchase: {
+      title: "Have you wondered how to start buying a house or apartment?",
+      subtitle: "You Rest, We Hunt.",
+      description: "We know your time is very valuable, that's why we created the 'Reverse Purchase' method, which is designed to make your real estate life easier and your purchase much simpler.",
+      steps: [
+        { title: "Strategic Briefing", desc: "We define your legacy goals, mapping out every emotional and financial requirement." },
+        { title: "The Market Hunt", desc: "Access to off-market inventory and exclusive pre-sales before the general public." },
+        { title: "Flawless Execution", desc: "White-glove negotiation and complete legal peace of mind. We handle the friction; you enjoy the result." }
+      ]
     },
     authority: {
       slides: [
