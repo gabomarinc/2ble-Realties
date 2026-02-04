@@ -245,12 +245,12 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           title: 'Ciudad de Panamá',
           location: 'Ciudad de Panamá',
           description: 'Estilo de vida vibrante, moderno y cultural.',
-          image: 'https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&q=80&w=1200',
+          image: '/fotos-2bleweb/Ciudad/portada.jpg',
           fullDescription: 'Estilo de vida vibrante y cerca de todo, con infraestructura y servicios de primer mundo, convirtiéndola en una ciudad moderna y de gran riqueza cultural.',
           gallery: [
-            'https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&q=80&w=1200',
-            'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&q=80&w=1200',
-            'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&q=80&w=1200'
+            { image: '/fotos-2bleweb/Ciudad/costanera-2-aqua-325.jpeg', title: 'Costanera / Aqua', price: 'Desde $325.000' },
+            { image: '/fotos-2bleweb/Ciudad/ipanema-300.jpg', title: 'Ipanema', price: 'Desde $300.000' },
+            { image: '/fotos-2bleweb/Ciudad/ocean-reef-the-palms-1350.jpg', title: 'The Palms (Ocean Reef)', price: 'Desde $1.350.000' }
           ],
           highlights: ['Conectividad global', 'Hub financiero y logistico']
         },
