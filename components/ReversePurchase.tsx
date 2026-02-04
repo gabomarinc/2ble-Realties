@@ -23,11 +23,15 @@ const ReversePurchase: React.FC<ReversePurchaseProps> = ({ lang, content }) => {
                                 {content.title}
                             </span>
                             <h2 className="apple-reveal text-5xl md:text-7xl font-serif text-navy leading-[1.1] mb-8 lg:mb-10" style={{ transitionDelay: '0.2s' }}>
-                                {content.subtitle.split(',').map((part, i) => (
-                                    <span key={i} className="block">
-                                        {part.trim()}{i === 0 ? ',' : '.'}
-                                    </span>
-                                ))}
+                                {content.subtitle.includes(',') ? (
+                                    content.subtitle.split(',').map((part, i, arr) => (
+                                        <span key={i} className="block">
+                                            {part.trim()}{i < arr.length - 1 ? ',' : '.'}
+                                        </span>
+                                    ))
+                                ) : (
+                                    content.subtitle
+                                )}
                             </h2>
                             <p className="apple-reveal text-slate-500 text-lg md:text-2xl font-light italic leading-relaxed max-w-xl" style={{ transitionDelay: '0.3s' }}>
                                 {content.description}

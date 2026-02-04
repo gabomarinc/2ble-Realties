@@ -90,8 +90,8 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
       ]
     },
     reversePurchase: {
-      title: "Have you wondered how to start buying a house or apartment?",
-      subtitle: "You Rest, We Hunt.",
+      title: "You Rest, We Hunt",
+      subtitle: "Have you wondered how to start buying a house or apartment?",
       description: "We know your time is very valuable, that's why we created the 'Reverse Purchase' method, which is designed to make your real estate life easier and your purchase much simpler.",
       steps: [
         { title: "Strategic Briefing", desc: "We define your legacy goals, mapping out every emotional and financial requirement." },
@@ -282,8 +282,8 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
       ]
     },
     reversePurchase: {
-      title: "¿Te has preguntado como iniciar la compra de una casa o apto?",
-      subtitle: "Tú Descansa, Nosotros Cazamos.",
+      title: "Tú Descansa, Nosotros Cazamos",
+      subtitle: "¿Te has preguntado como iniciar la compra de una casa o apto?",
       description: "Sabemos que tu tiempo es muy valioso, por eso creamos el método de ¨Compra inversa¨, el cual está diseñado para hacer tu vida inmobiliaria más fácil y tu compra mucho más sencilla.",
       steps: [
         { title: "Briefing Estratégico", desc: "Definimos sus metas de legado, mapeando cada requerimiento emocional y financiero." },
