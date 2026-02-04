@@ -312,7 +312,7 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           image: "/foto-jonathan.jpg",
           stats: [
             {
-              value: <div className="flex items-center gap-4 text-3xl lg:text-4xl"><Phone className="w-8 h-8 lg:w-10 lg:h-10 text-champagne" /> <span>+507 6314-5710</span></div>,
+              value: <a href="tel:+50763145710" className="flex items-center gap-3 text-xl lg:text-2xl hover:text-champagne transition-colors"><Phone className="w-5 h-5 lg:w-6 lg:h-6 text-champagne" /> <span>+507 6314-5710</span></a>,
             }
           ]
         },
@@ -323,7 +323,7 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           image: "/foto-yiniva.jpg",
           stats: [
             {
-              value: <div className="flex items-center gap-4 text-3xl lg:text-4xl"><Phone className="w-8 h-8 lg:w-10 lg:h-10 text-champagne" /> <span>+507 6763-5522</span></div>,
+              value: <a href="tel:+50767635522" className="flex items-center gap-3 text-xl lg:text-2xl hover:text-champagne transition-colors"><Phone className="w-5 h-5 lg:w-6 lg:h-6 text-champagne" /> <span>+507 6763-5522</span></a>,
             }
           ]
         },
@@ -334,7 +334,7 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           image: "/foto-prospero.jpg",
           stats: [
             {
-              value: <div className="flex items-center gap-4 text-3xl lg:text-4xl"><Phone className="w-8 h-8 lg:w-10 lg:h-10 text-champagne" /> <span>+507 6280-1439</span></div>,
+              value: <a href="tel:+50762801439" className="flex items-center gap-3 text-xl lg:text-2xl hover:text-champagne transition-colors"><Phone className="w-5 h-5 lg:w-6 lg:h-6 text-champagne" /> <span>+507 6280-1439</span></a>,
             }
           ]
         }
