@@ -90,14 +90,6 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
       ]
     },
     reversePurchase: {
-      title: "The Relief Engineering",
-      subtitle: "You Rest, We Hunt.",
-      description: "Searching for luxury shouldn't be a second job. We manage the noise so you only see the extraordinary. Our 'Reverse Purchase' method is designed for those whose time is their most valuable asset.",
-      steps: [
-        { title: "Strategic Briefing", desc: "We define your legacy goals, mapping out every emotional and financial requirement." },
-        { title: "The Market Hunt", desc: "Access to off-market inventory and exclusive pre-sales before the general public." },
-        { title: "Flawless Execution", desc: "White-glove negotiation and complete legal peace of mind. We handle the friction; you enjoy the result." }
-      ]
     },
     authority: {
       slides: [
@@ -282,9 +274,9 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
       ]
     },
     reversePurchase: {
-      title: "La Ingeniería del Alivio",
+      title: "¿Te has preguntado como iniciar la compra de una casa o apto?",
       subtitle: "Tú Descansa, Nosotros Cazamos.",
-      description: "Buscar lujo no debe ser un segundo trabajo. Filtramos el ruido para que solo vea lo extraordinario. Nuestro método de 'Compra Inversa' está diseñado para quienes valoran su tiempo por encima de todo.",
+      description: "Sabemos que tu tiempo es muy valioso, por eso creamos el método de ¨Compra inversa¨, el cual está diseñado para hacer tu vida inmobiliaria más fácil y tu compra mucho más sencilla.",
       steps: [
         { title: "Briefing Estratégico", desc: "Definimos sus metas de legado, mapeando cada requerimiento emocional y financiero." },
         { title: "La Cacería de Mercado", desc: "Acceso a inventario fuera de mercado y preventas exclusivas antes que el público general." },
