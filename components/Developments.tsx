@@ -139,7 +139,7 @@ const Developments: React.FC<DevelopmentsProps> = ({ lang }) => {
                                                         {isObj && (
                                                             <div>
                                                                 <h5 className="text-navy font-bold text-sm tracking-wide mb-1">{imgTitle}</h5>
-                                                                <p className="text-champagne text-xs font-light uppercase tracking-widest">{imgPrice}</p>
+                                                                <p className="text-champagne text-xs font-light tracking-widest">{imgPrice}</p>
                                                             </div>
                                                         )}
                                                     </div>
@@ -172,7 +172,7 @@ const Developments: React.FC<DevelopmentsProps> = ({ lang }) => {
                     <img
                         src={lightboxImage}
                         alt="Full View"
-                        className="max-w-[95vw] max-h-[95vh] object-contain rounded-sm shadow-2xl animate-zoom-in"
+                        className="max-w-[95vw] max-h-[95vh] object-contain rounded-2xl shadow-2xl animate-zoom-in"
                     />
                 </div>,
                 document.body
