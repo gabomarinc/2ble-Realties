@@ -294,10 +294,10 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
     authority: {
       slides: [
         {
-          title: "Arquitectos de Capital",
-          mainTitle: <>Double <span className="italic font-extralight text-slate-300">the Standard</span></>,
+          title: "2Ble Realty",
+          mainTitle: <>Aliados <span className="italic font-extralight text-slate-300">Estratégicos</span></>,
           description: "Aquí encontrarás a los expertos que te guiarán en cada paso que des.",
-          image: "/logos.png",
+          image: "/logos-aliados.jpg",
           logoOverlay: false,
           stats: [
             { value: "+10", label: "Años de Experiencia" },
