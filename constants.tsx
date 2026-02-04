@@ -18,20 +18,20 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
       cta: "Experience the Difference"
     },
     developments: {
-      title: "The Boldest Zones",
-      subtitle: "Explore transformative zones that elevate the lifestyle in Panama City.",
+      title: "The most exclusive zones",
+      subtitle: "Whether in the city or the outskirts, we always find the best for you.",
       items: [
         {
           id: 'd1',
           title: 'Panama Pacifico',
           location: 'Panama West',
           description: 'Combines nature, modern design, security and sustainability.',
-          image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200',
+          image: '/fotos-2bleweb/Panama Pacifico/portada.jpeg',
           fullDescription: 'Combines nature, modern design, security and sustainability, with a sense of open spaces and green areas like no other, ideal for those who value quality of life.',
           gallery: [
-            'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200',
-            'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=1200',
-            'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200'
+            { image: '/fotos-2bleweb/Panama Pacifico/centriqo-188.jpg', title: 'Centriquo', price: 'From $188.000' },
+            { image: '/fotos-2bleweb/Panama Pacifico/explora-603.jpg', title: 'Explora', price: 'From $603.000' },
+            { image: '/fotos-2bleweb/Panama Pacifico/lotes-sanctuary-880.jpeg', title: 'Sanctuary Lots', price: 'From $880.000' }
           ],
           highlights: ['Master Plan', 'International Airport']
         },
@@ -40,12 +40,13 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           title: 'Santa Maria',
           location: 'Costa del Este',
           description: 'Luxury and nature in one of the most exclusive sectors.',
-          image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1200',
+          image: '/fotos-2bleweb/Santa Maria/portada.jpg',
           fullDescription: 'One of the most exclusive and sought-after residential sectors in the country where luxury combines with nature, achieving a unique lifestyle.',
           gallery: [
-            'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1200',
-            'https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?auto=format&fit=crop&q=80&w=1200',
-            'https://images.unsplash.com/photo-1613545325278-f24b0cae1224?auto=format&fit=crop&q=80&w=1200'
+            { image: '/fotos-2bleweb/Santa Maria/bosco-475.jpg', title: 'Bosco', price: 'From $475.000' },
+            { image: '/fotos-2bleweb/Santa Maria/celeste-630.jpg', title: 'Celeste', price: 'From $630.000' },
+            { image: '/fotos-2bleweb/Santa Maria/corotu-550.jpg', title: 'Corotu', price: 'From $550.000' },
+            { image: '/fotos-2bleweb/Santa Maria/the-woods-1060.jpg', title: 'The Woods', price: 'From $1.060.000' }
           ],
           highlights: ['Golf Course', 'Private Club']
         },
@@ -54,12 +55,12 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           title: 'Panama City',
           location: 'Panama City',
           description: 'Vibrant, modern and cultural lifestyle.',
-          image: 'https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&q=80&w=1200',
+          image: '/fotos-2bleweb/Ciudad/portada.jpg',
           fullDescription: 'Vibrant lifestyle close to everything, with first-world infrastructure and services, making it a modern city with great cultural wealth.',
           gallery: [
-            'https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&q=80&w=1200',
-            'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&q=80&w=1200',
-            'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&q=80&w=1200'
+            { image: '/fotos-2bleweb/Ciudad/costanera-2-aqua-325.jpeg', title: 'Costanera / Aqua', price: 'From $325.000' },
+            { image: '/fotos-2bleweb/Ciudad/ipanema-300.jpg', title: 'Ipanema', price: 'From $300.000' },
+            { image: '/fotos-2bleweb/Ciudad/ocean-reef-the-palms-1350.jpg', title: 'The Palms (Ocean Reef)', price: 'From $1.350.000' }
           ],
           highlights: ['Global connectivity', 'Financial and logistics hub']
         },
@@ -68,12 +69,13 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           title: 'Investment',
           location: 'Panama',
           description: 'The best country to invest and retire.',
-          image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200',
+          image: '/fotos-2bleweb/Inversion/portada-nautilus-205.jpg',
           fullDescription: 'Considered the best country to invest and retire thanks to its stable and dollarized economy, becoming one of the real estate markets with the highest demand.',
           gallery: [
-            'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200',
-            'https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&fit=crop&q=80&w=1200',
-            'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=80&w=1200'
+            { image: '/fotos-2bleweb/Inversion/portada-nautilus-205.jpg', title: 'Nautilus', price: 'From $205.000' },
+            { image: '/fotos-2bleweb/Inversion/boquete-pino-alto-224.jpg', title: 'Pino Alto (Boquete)', price: 'From $224.000' },
+            { image: '/fotos-2bleweb/Inversion/the-westin-residences-424.jpg', title: 'The Westin Residences', price: 'From $424.000' },
+            { image: '/fotos-2bleweb/Inversion/the-westin-residences-424-2.jpg', title: 'The Westin Sembrador', price: 'From $424.000' }
           ],
           highlights: ['High appreciation', 'Dynamic real estate market', 'High demand']
         }
@@ -102,10 +104,10 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
     authority: {
       slides: [
         {
-          title: "Architects of Capital",
-          mainTitle: <>Double <span className="italic font-extralight text-slate-300">the Standard</span></>,
-          description: "Swipe to meet the experts redefining the standard of luxury real estate.",
-          image: "/logos.png",
+          title: "2Ble Realty",
+          mainTitle: <>Strategic <span className="italic font-extralight text-slate-300">Allies</span></>,
+          description: "Here you will find the experts who will guide you in every step you take.",
+          image: "/logos-aliados.jpg",
           logoOverlay: false,
           stats: [
             { value: "10+", label: "Years Experience" },
@@ -120,7 +122,7 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           image: "/foto-jonathan.jpg",
           stats: [
             {
-              value: <div className="flex items-center gap-4 text-3xl lg:text-4xl"><Phone className="w-8 h-8 lg:w-10 lg:h-10 text-champagne" /> <span>+507 6314-5710</span></div>,
+              value: <a href="tel:+50763145710" className="flex items-center gap-3 text-xl lg:text-2xl hover:text-champagne transition-colors"><Phone className="w-5 h-5 lg:w-6 lg:h-6 text-champagne" /> <span>+507 6314-5710</span></a>,
             }
           ]
         },
@@ -131,7 +133,7 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           image: "/foto-yiniva.jpg",
           stats: [
             {
-              value: <div className="flex items-center gap-4 text-3xl lg:text-4xl"><Phone className="w-8 h-8 lg:w-10 lg:h-10 text-champagne" /> <span>+507 6763-5522</span></div>,
+              value: <a href="tel:+50767635522" className="flex items-center gap-3 text-xl lg:text-2xl hover:text-champagne transition-colors"><Phone className="w-5 h-5 lg:w-6 lg:h-6 text-champagne" /> <span>+507 6763-5522</span></a>,
             }
           ]
         },
@@ -142,7 +144,7 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           image: "/foto-prospero.jpg",
           stats: [
             {
-              value: <div className="flex items-center gap-4 text-3xl lg:text-4xl"><Phone className="w-8 h-8 lg:w-10 lg:h-10 text-champagne" /> <span>+507 6280-1439</span></div>,
+              value: <a href="tel:+50762801439" className="flex items-center gap-3 text-xl lg:text-2xl hover:text-champagne transition-colors"><Phone className="w-5 h-5 lg:w-6 lg:h-6 text-champagne" /> <span>+507 6280-1439</span></a>,
             }
           ]
         }
