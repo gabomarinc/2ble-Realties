@@ -225,162 +225,162 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           ],
           highlights: ['Master Plan', 'Aeropuerto internacional']
         },
-        {
-          id: 'd2',
-          title: 'Santa María',
-          location: 'Costa del Este',
-          description: 'Lujo y naturaleza en uno de los sectores más exclusivos.',
-          image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1200',
-          fullDescription: 'Uno de los sectores residenciales mas exclusivos y cotizados del país donde se combina el lujo con la naturaleza, logrando un estilo de vida único.',
-          gallery: [
-            'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1200',
-            'https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?auto=format&fit=crop&q=80&w=1200',
-            'https://images.unsplash.com/photo-1613545325278-f24b0cae1224?auto=format&fit=crop&q=80&w=1200'
-          ],
-          highlights: ['Cancha de Golf', 'Club Privado']
+        id: 'd2',
+        title: 'Santa María',
+        location: 'Costa del Este',
+        description: 'Lujo y naturaleza en uno de los sectores más exclusivos.',
+        image: '/fotos-2bleweb/Santa Maria/portada.webp',
+        fullDescription: 'Uno de los sectores residenciales mas exclusivos y cotizados del país donde se combina el lujo con la naturaleza, logrando un estilo de vida único.',
+        gallery: [
+          { image: '/fotos-2bleweb/Santa Maria/bosco-475.jpg', title: 'Bosco', price: 'Desde $475.000' },
+          { image: '/fotos-2bleweb/Santa Maria/celeste-630.jpg', title: 'Celeste', price: 'Desde $630.000' },
+          { image: '/fotos-2bleweb/Santa Maria/corotu-550.jpg', title: 'Corotu', price: 'Desde $550.000' },
+          { image: '/fotos-2bleweb/Santa Maria/the-woods-1060.jpg', title: 'The Woods', price: 'Desde $1.060.000' }
+        ],
+        highlights: ['Cancha de Golf', 'Club Privado']
         },
         {
-          id: 'd3',
-          title: 'Ciudad de Panamá',
-          location: 'Ciudad de Panamá',
-          description: 'Estilo de vida vibrante, moderno y cultural.',
+  id: 'd3',
+    title: 'Ciudad de Panamá',
+      location: 'Ciudad de Panamá',
+        description: 'Estilo de vida vibrante, moderno y cultural.',
           image: 'https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&q=80&w=1200',
-          fullDescription: 'Estilo de vida vibrante y cerca de todo, con infraestructura y servicios de primer mundo, convirtiéndola en una ciudad moderna y de gran riqueza cultural.',
-          gallery: [
-            'https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&q=80&w=1200',
-            'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&q=80&w=1200',
-            'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&q=80&w=1200'
-          ],
-          highlights: ['Conectividad global', 'Hub financiero y logistico']
-        },
-        {
-          id: 'd4',
-          title: 'Inversión',
-          location: 'Panamá',
-          description: 'El mejor país para invertir y retirarse.',
+            fullDescription: 'Estilo de vida vibrante y cerca de todo, con infraestructura y servicios de primer mundo, convirtiéndola en una ciudad moderna y de gran riqueza cultural.',
+              gallery: [
+                'https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&q=80&w=1200',
+                'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&q=80&w=1200',
+                'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&q=80&w=1200'
+              ],
+                highlights: ['Conectividad global', 'Hub financiero y logistico']
+},
+{
+  id: 'd4',
+    title: 'Inversión',
+      location: 'Panamá',
+        description: 'El mejor país para invertir y retirarse.',
           image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200',
-          fullDescription: 'Considerado el mejor país para invertir y retirarse gracias a su economía estable y dolarizada, convirtiéndose en unos de los mercados con mayor demanda en bienes raíces.',
-          gallery: [
-            'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200',
-            'https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&fit=crop&q=80&w=1200',
-            'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=80&w=1200'
-          ],
-          highlights: ['Alta valorización', 'Mercado inmobiliario dinámico', 'Alta demanda']
-        }
+            fullDescription: 'Considerado el mejor país para invertir y retirarse gracias a su economía estable y dolarizada, convirtiéndose en unos de los mercados con mayor demanda en bienes raíces.',
+              gallery: [
+                'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1200',
+                'https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&fit=crop&q=80&w=1200',
+                'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&q=80&w=1200'
+              ],
+                highlights: ['Alta valorización', 'Mercado inmobiliario dinámico', 'Alta demanda']
+}
       ]
     },
-    properties: {
-      title: "Propiedades Destacadas",
-      subtitle: "Oportunidades seleccionadas para una vida extraordinaria.",
+properties: {
+  title: "Propiedades Destacadas",
+    subtitle: "Oportunidades seleccionadas para una vida extraordinaria.",
       cta: "Ver Colección",
-      items: [
-        { id: '1', title: 'The Sky Villa', location: 'Ocean Reef Islands', price: '$3.2M', image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=80&w=1200', tag: 'Edición Limitada' },
-        { id: '2', title: 'Veranda House', location: 'Costa del Este', price: '$1.8M', image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200', tag: 'Exclusiva' },
-        { id: '3', title: 'Azure Penthouse', location: 'Punta Pacifica', price: '$4.5M', image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1200', tag: 'Nuevo Listado' }
-      ]
-    },
-    reversePurchase: {
-      title: "La Ingeniería del Alivio",
-      subtitle: "Tú Descansa, Nosotros Cazamos.",
+        items: [
+          { id: '1', title: 'The Sky Villa', location: 'Ocean Reef Islands', price: '$3.2M', image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=80&w=1200', tag: 'Edición Limitada' },
+          { id: '2', title: 'Veranda House', location: 'Costa del Este', price: '$1.8M', image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200', tag: 'Exclusiva' },
+          { id: '3', title: 'Azure Penthouse', location: 'Punta Pacifica', price: '$4.5M', image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1200', tag: 'Nuevo Listado' }
+        ]
+},
+reversePurchase: {
+  title: "La Ingeniería del Alivio",
+    subtitle: "Tú Descansa, Nosotros Cazamos.",
       description: "Buscar lujo no debe ser un segundo trabajo. Filtramos el ruido para que solo vea lo extraordinario. Nuestro método de 'Compra Inversa' está diseñado para quienes valoran su tiempo por encima de todo.",
-      steps: [
-        { title: "Briefing Estratégico", desc: "Definimos sus metas de legado, mapeando cada requerimiento emocional y financiero." },
-        { title: "La Cacería de Mercado", desc: "Acceso a inventario fuera de mercado y preventas exclusivas antes que el público general." },
-        { title: "Ejecución Impecable", desc: "Negociación de guante blanco y paz mental legal total. Nosotros gestionamos la fricción; usted disfruta el resultado." }
+        steps: [
+          { title: "Briefing Estratégico", desc: "Definimos sus metas de legado, mapeando cada requerimiento emocional y financiero." },
+          { title: "La Cacería de Mercado", desc: "Acceso a inventario fuera de mercado y preventas exclusivas antes que el público general." },
+          { title: "Ejecución Impecable", desc: "Negociación de guante blanco y paz mental legal total. Nosotros gestionamos la fricción; usted disfruta el resultado." }
+        ]
+},
+authority: {
+  slides: [
+    {
+      title: "Arquitectos de Capital",
+      mainTitle: <>Double <span className="italic font-extralight text-slate-300">the Standard</span></>,
+      description: "Aquí encontrarás a los expertos que te guiarán en cada paso que des.",
+      image: "/logos.png",
+      logoOverlay: false,
+      stats: [
+        { value: "+10", label: "Años de Experiencia" },
+        { value: "+$75M", label: "En Ventas" },
+        { value: "+250", label: "Hogares" }
       ]
     },
-    authority: {
-      slides: [
+    {
+      title: "Alcance Global",
+      mainTitle: <>Jonathan<br /><span className="italic font-extralight text-slate-300">Valverde</span></>,
+      description: "Accediendo a una extensa red de inversores internacionales y propiedades premium.",
+      image: "/foto-jonathan.jpg",
+      stats: [
         {
-          title: "Arquitectos de Capital",
-          mainTitle: <>Double <span className="italic font-extralight text-slate-300">the Standard</span></>,
-          description: "Aquí encontrarás a los expertos que te guiarán en cada paso que des.",
-          image: "/logos.png",
-          logoOverlay: false,
-          stats: [
-            { value: "+10", label: "Años de Experiencia" },
-            { value: "+$75M", label: "En Ventas" },
-            { value: "+250", label: "Hogares" }
-          ]
-        },
-        {
-          title: "Alcance Global",
-          mainTitle: <>Jonathan<br /><span className="italic font-extralight text-slate-300">Valverde</span></>,
-          description: "Accediendo a una extensa red de inversores internacionales y propiedades premium.",
-          image: "/foto-jonathan.jpg",
-          stats: [
-            {
-              value: <div className="flex items-center gap-4 text-3xl lg:text-4xl"><Phone className="w-8 h-8 lg:w-10 lg:h-10 text-champagne" /> <span>+507 6314-5710</span></div>,
-            }
-          ]
-        },
-        {
-          title: "Asesoría Élite",
-          mainTitle: <>Yiniva<br /><span className="italic font-extralight text-slate-300">Cedeño</span></>,
-          description: "Proporcionando información basada en datos para maximizar su potencial de inversión.",
-          image: "/foto-yiniva.jpg",
-          stats: [
-            {
-              value: <div className="flex items-center gap-4 text-3xl lg:text-4xl"><Phone className="w-8 h-8 lg:w-10 lg:h-10 text-champagne" /> <span>+507 6763-5522</span></div>,
-            }
-          ]
-        },
-        {
-          title: "Nueva Sección",
-          mainTitle: <>Prospero<br /><span className="italic font-extralight text-slate-300">Lasso</span></>,
-          description: "Texto de ejemplo para la cuarta sección. Aquí puedes colocar la descripción que desees.",
-          image: "/foto-prospero.jpg",
-          stats: [
-            {
-              value: <div className="flex items-center gap-4 text-3xl lg:text-4xl"><Phone className="w-8 h-8 lg:w-10 lg:h-10 text-champagne" /> <span>+507 6280-1439</span></div>,
-            }
-          ]
+          value: <div className="flex items-center gap-4 text-3xl lg:text-4xl"><Phone className="w-8 h-8 lg:w-10 lg:h-10 text-champagne" /> <span>+507 6314-5710</span></div>,
         }
       ]
     },
-    missionVision: {
-      subTitle: "Legado y Visión",
-      title: <>Nuestra Alma<br /><i className="font-serif italic text-white/50">Define</i> el<br />Estándar</>,
-      mission: {
-        title: "Nuestro Manifiesto",
-        desc: "No cerramos tratos; aseguramos legados. Nuestra misión es desmantelar lo ordinario, brindando un santuario de inteligencia y estatus para quienes exigen lo mejor de Panamá."
-      },
-      vision: {
-        title: "La Estrella Polar",
-        desc: "Orquestar el futuro del lujo en el trópico, donde cada propiedad que tocamos se convierta en un referente de excelencia global y una fortaleza para su patrimonio."
-      }
-    },
-    benefits: {
-      title: "El Círculo Interno",
-      items: [
-        { title: "Protección de Activos", desc: "Navegue el panorama legal panameño con absoluta certeza y asesores de élite." },
-        { title: "Portafolios de Alto Rendimiento", desc: "Selecciones basadas en datos en Costa del Este y Ocean Reef con retorno probado." },
-        { title: "Concierge de Estilo de Vida", desc: "Servicios VIP de reubicación que hacen que mudarse parezca unas vacaciones de cinco estrellas." }
+    {
+      title: "Asesoría Élite",
+      mainTitle: <>Yiniva<br /><span className="italic font-extralight text-slate-300">Cedeño</span></>,
+      description: "Proporcionando información basada en datos para maximizar su potencial de inversión.",
+      image: "/foto-yiniva.jpg",
+      stats: [
+        {
+          value: <div className="flex items-center gap-4 text-3xl lg:text-4xl"><Phone className="w-8 h-8 lg:w-10 lg:h-10 text-champagne" /> <span>+507 6763-5522</span></div>,
+        }
       ]
     },
-    referral: {
-      title: "Comunidad de Éxito Compartido",
-      desc: "El éxito es mejor cuando se comparte. Refiera a un colega y expanda el círculo de inversión de élite en Panamá. No es solo una red; es una comunidad de visionarios de alto impacto.",
-      cta: "Únase al Círculo de Élite"
-    },
-    contact: {
-      title: "Defina Su Visión",
-      subtitle: "Hablemos de su próximo paso en absoluta confidencialidad.",
-      name: "Su Nombre",
-      email: "Correo Electrónico",
-      message: "¿Cómo podemos elevar su portafolio?",
-      submit: "Enviar Consulta"
-    },
-    ui: {
-      premiumAsset: "Activo Premium",
-      discoverMore: "Descubrir Más",
-      keyFeatures: "Características Clave",
-      gallery: "Propiedades de Interés",
-      inquireInterest: "Solicitar Información",
-      privatePortfolio: "Portafolio Privado",
-      clickInquiry: "Clic para consultar",
-      curated: "100% Curado",
-      since2010: "Desde 2010"
+    {
+      title: "Nueva Sección",
+      mainTitle: <>Prospero<br /><span className="italic font-extralight text-slate-300">Lasso</span></>,
+      description: "Texto de ejemplo para la cuarta sección. Aquí puedes colocar la descripción que desees.",
+      image: "/foto-prospero.jpg",
+      stats: [
+        {
+          value: <div className="flex items-center gap-4 text-3xl lg:text-4xl"><Phone className="w-8 h-8 lg:w-10 lg:h-10 text-champagne" /> <span>+507 6280-1439</span></div>,
+        }
+      ]
     }
+  ]
+},
+missionVision: {
+  subTitle: "Legado y Visión",
+    title: <>Nuestra Alma<br /><i className="font-serif italic text-white/50">Define</i> el<br />Estándar</>,
+      mission: {
+    title: "Nuestro Manifiesto",
+      desc: "No cerramos tratos; aseguramos legados. Nuestra misión es desmantelar lo ordinario, brindando un santuario de inteligencia y estatus para quienes exigen lo mejor de Panamá."
+  },
+  vision: {
+    title: "La Estrella Polar",
+      desc: "Orquestar el futuro del lujo en el trópico, donde cada propiedad que tocamos se convierta en un referente de excelencia global y una fortaleza para su patrimonio."
+  }
+},
+benefits: {
+  title: "El Círculo Interno",
+    items: [
+      { title: "Protección de Activos", desc: "Navegue el panorama legal panameño con absoluta certeza y asesores de élite." },
+      { title: "Portafolios de Alto Rendimiento", desc: "Selecciones basadas en datos en Costa del Este y Ocean Reef con retorno probado." },
+      { title: "Concierge de Estilo de Vida", desc: "Servicios VIP de reubicación que hacen que mudarse parezca unas vacaciones de cinco estrellas." }
+    ]
+},
+referral: {
+  title: "Comunidad de Éxito Compartido",
+    desc: "El éxito es mejor cuando se comparte. Refiera a un colega y expanda el círculo de inversión de élite en Panamá. No es solo una red; es una comunidad de visionarios de alto impacto.",
+      cta: "Únase al Círculo de Élite"
+},
+contact: {
+  title: "Defina Su Visión",
+    subtitle: "Hablemos de su próximo paso en absoluta confidencialidad.",
+      name: "Su Nombre",
+        email: "Correo Electrónico",
+          message: "¿Cómo podemos elevar su portafolio?",
+            submit: "Enviar Consulta"
+},
+ui: {
+  premiumAsset: "Activo Premium",
+    discoverMore: "Descubrir Más",
+      keyFeatures: "Características Clave",
+        gallery: "Propiedades de Interés",
+          inquireInterest: "Solicitar Información",
+            privatePortfolio: "Portafolio Privado",
+              clickInquiry: "Clic para consultar",
+                curated: "100% Curado",
+                  since2010: "Desde 2010"
+}
   }
 };
