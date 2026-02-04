@@ -11,6 +11,12 @@ export interface Property {
   tag: string;
 }
 
+export interface GalleryItem {
+  image: string;
+  title: string;
+  price: string;
+}
+
 export interface Development {
   id: string;
   title: string;
@@ -18,7 +24,7 @@ export interface Development {
   description: string;
   image: string;
   fullDescription?: string;
-  gallery?: string[];
+  gallery?: (string | GalleryItem)[];
   highlights?: string[];
 }
 

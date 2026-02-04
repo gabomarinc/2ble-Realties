@@ -216,12 +216,12 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           title: 'Panamá Pacífico',
           location: 'Panamá Oeste',
           description: 'Combina naturaleza, diseño moderno, seguridad y sostenibilidad.',
-          image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200',
+          image: '/fotos-2bleweb/Panama Pacifico/portada.jpeg',
           fullDescription: 'Combina naturaleza, diseño moderno, seguridad y sostenibilidad, con una sensación de espacios abiertos y áreas verdes como ninguna otra, ideal para los que valoran calidad de vida.',
           gallery: [
-            'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200',
-            'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=1200',
-            'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200'
+            { image: '/fotos-2bleweb/Panama Pacifico/centriqo-188.jpg', title: 'Centriquo', price: 'Desde $188.000' },
+            { image: '/fotos-2bleweb/Panama Pacifico/explora-603.jpg', title: 'Explora', price: 'Desde $603.000' },
+            { image: '/fotos-2bleweb/Panama Pacifico/lotes-sanctuary-880.jpeg', title: 'Lotes Sanctuary', price: 'Desde $880.000' }
           ],
           highlights: ['Master Plan', 'Aeropuerto internacional']
         },
@@ -375,7 +375,7 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
       premiumAsset: "Activo Premium",
       discoverMore: "Descubrir Más",
       keyFeatures: "Características Clave",
-      gallery: "Galería",
+      gallery: "Propiedades de Interés",
       inquireInterest: "Solicitar Información",
       privatePortfolio: "Portafolio Privado",
       clickInquiry: "Clic para consultar",

@@ -12,6 +12,7 @@ const Developments: React.FC<DevelopmentsProps> = ({ lang }) => {
     const content = CONTENT[lang].developments;
     const ui = CONTENT[lang].ui;
     const [selectedItem, setSelectedItem] = useState<Development | null>(null);
+    const [lightboxImage, setLightboxImage] = useState<string | null>(null);
 
     return (
         <section id="developments" className="bg-white py-24 lg:py-40 reveal text-navy">
@@ -118,12 +119,32 @@ const Developments: React.FC<DevelopmentsProps> = ({ lang }) => {
                                 {selectedItem.gallery && (
                                     <div>
                                         <h4 className="text-xs font-black uppercase tracking-widest text-navy mb-6">{ui.gallery}</h4>
-                                        <div className="grid grid-cols-3 gap-3">
-                                            {selectedItem.gallery.map((img, idx) => (
-                                                <div key={idx} className="aspect-square rounded-xl overflow-hidden cursor-pointer hover:opacity-90 transition-opacity">
-                                                    <img src={img} className="w-full h-full object-cover" alt="Gallery" />
-                                                </div>
-                                            ))}
+                                        <div className="grid grid-cols-2 gap-4">
+                                            {selectedItem.gallery.map((item, idx) => {
+                                                const isObj = typeof item === 'object';
+                                                const imgSrc = isObj ? item.image : item;
+                                                const imgTitle = isObj ? item.title : '';
+                                                const imgPrice = isObj ? item.price : '';
+
+                                                return (
+                                                    <div
+                                                        key={idx}
+                                                        className="group cursor-pointer"
+                                                        onClick={() => setLightboxImage(imgSrc)}
+                                                    >
+                                                        <div className="aspect-video rounded-xl overflow-hidden mb-3 relative">
+                                                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors z-10"></div>
+                                                            <img src={imgSrc} className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" alt={imgTitle || "Gallery"} />
+                                                        </div>
+                                                        {isObj && (
+                                                            <div>
+                                                                <h5 className="text-navy font-bold text-sm tracking-wide mb-1">{imgTitle}</h5>
+                                                                <p className="text-champagne text-xs font-light uppercase tracking-widest">{imgPrice}</p>
+                                                            </div>
+                                                        )}
+                                                    </div>
+                                                );
+                                            })}
                                         </div>
                                     </div>
                                 )}
@@ -136,6 +157,23 @@ const Developments: React.FC<DevelopmentsProps> = ({ lang }) => {
                             </div>
                         </div>
                     </div>
+                </div>,
+                document.body
+            )}
+
+            {/* LIGHTBOX */}
+            {lightboxImage && createPortal(
+                <div className="fixed inset-0 z-[110] flex items-center justify-center bg-black/95 backdrop-blur-sm animate-in fade-in duration-300" onClick={() => setLightboxImage(null)}>
+                    <button
+                        className="absolute top-6 right-6 z-20 text-white/50 hover:text-white p-2 transition-colors"
+                    >
+                        <X size={40} />
+                    </button>
+                    <img
+                        src={lightboxImage}
+                        alt="Full View"
+                        className="max-w-[95vw] max-h-[95vh] object-contain rounded-sm shadow-2xl animate-zoom-in"
+                    />
                 </div>,
                 document.body
             )}
