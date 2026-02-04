@@ -13,9 +13,9 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
     },
     hero: {
       slogan: "Double the Standard",
-      title: <>Elevate<br />Your<br /><i className="font-serif italic text-white/90">Investment</i><br />in<br />Panama</>,
-      subtitle: "Beyond square footage, we secure your status and freedom. Intelligent assets for the visionary investor.",
-      cta: "Experience the Difference"
+      title: <><i className="font-serif italic text-white/80 font-light">Invest</i> in Panama</>,
+      subtitle: "Beyond square meters, our vision is to find together with you that smart investment with an immediate return.",
+      cta: "Live the Difference"
     },
     developments: {
       title: "The most exclusive zones",
