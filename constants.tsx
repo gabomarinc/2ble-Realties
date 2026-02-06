@@ -154,12 +154,12 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
       subTitle: "Legacy & Vision",
       title: <>Our Soul<br /><i className="font-serif italic text-white/50">Defines</i> the<br />Standard</>,
       mission: {
-        title: "Our Manifest",
-        desc: "We don't close deals; we secure legacies. Our mission is to dismantle the ordinary, providing a sanctuary of intelligence and status for those who demand Panama's absolute best."
+        title: "Mission",
+        desc: "Reinventing the way people invest in the real estate market, integrating technology and experience, setting the new standard for real estate in Panama."
       },
       vision: {
-        title: "The North Star",
-        desc: "To orchestrate the future of luxury living in the tropics, where every property we touch becomes a benchmark of global excellence and a fortress for your wealth."
+        title: "Vision",
+        desc: "Leading the new era of real estate in Panama, transforming the way we live and invest."
       }
     },
     benefits: {
