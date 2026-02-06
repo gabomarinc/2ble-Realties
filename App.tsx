@@ -11,6 +11,7 @@ import Mission from './components/Mission';
 import Contact from './components/Contact';
 
 import ReversePurchase from './components/ReversePurchase';
+import MortgageCalculator from './components/MortgageCalculator';
 
 const App: React.FC = () => {
   const [lang, setLang] = useState<Language>('es');
@@ -56,6 +57,7 @@ const App: React.FC = () => {
       {/* <Properties lang={lang} /> */}
       <Authority lang={lang} />
       <ReversePurchase lang={lang} content={content.reversePurchase} />
+      <MortgageCalculator lang={lang} />
       <Mission lang={lang} />
       <Contact lang={lang} />
 
