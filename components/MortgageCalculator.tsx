@@ -24,7 +24,7 @@ const MortgageCalculator: React.FC<MortgageCalculatorProps> = ({ lang }) => {
                         <iframe
                             src="https://kredit.konsul.digital/?mode=embed&company_id=d71c8697-c123-487f-b1f1-9852d01186b4&form_id=76e605b2-d7de-463a-acdd-bb8ec1082225"
                             width="100%"
-                            height="1100"
+                            height="1400"
                             frameBorder="0"
                             style={{
                                 borderRadius: '20px',
