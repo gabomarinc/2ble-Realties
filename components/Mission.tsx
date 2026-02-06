@@ -34,7 +34,7 @@ const Mission: React.FC<MissionProps> = ({ lang }) => {
                     {/* Dark Card - Manifesto */}
                     <div className="reveal relative h-[500px] lg:h-[700px] rounded-[40px] lg:rounded-[50px] overflow-hidden group">
                         <img
-                            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200"
+                            src="/foto-interior-6.jpeg"
                             alt="Office"
                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                         />
@@ -68,7 +68,7 @@ const Mission: React.FC<MissionProps> = ({ lang }) => {
 
                             <div className="h-48 lg:h-64 rounded-3xl overflow-hidden mt-auto apple-reveal" style={{ transitionDelay: '0.3s' }}>
                                 <img
-                                    src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=1200"
+                                    src="/foto-interior-5.jpeg"
                                     alt="Interior"
                                     className="w-full h-full object-cover"
                                 />
