@@ -346,12 +346,12 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
       subTitle: "Legado y Visión",
       title: <>Nuestra Alma<br /><i className="font-serif italic text-white/50">Define</i> el<br />Estándar</>,
       mission: {
-        title: "Nuestro Manifiesto",
-        desc: "No cerramos tratos; aseguramos legados. Nuestra misión es desmantelar lo ordinario, brindando un santuario de inteligencia y estatus para quienes exigen lo mejor de Panamá."
+        title: "Misión",
+        desc: "Reinventar la forma en que las personas invierten en el mercado inmobiliario, integrando tecnología y experiencia, logrando marcar el nuevo estándar de real estate en Panamá."
       },
       vision: {
-        title: "La Estrella Polar",
-        desc: "Orquestar el futuro del lujo en el trópico, donde cada propiedad que tocamos se convierta en un referente de excelencia global y una fortaleza para su patrimonio."
+        title: "Visión",
+        desc: "Liderar la nueva era del real estate en Panamá, transformando la forma de vivir e invertir."
       }
     },
     benefits: {
