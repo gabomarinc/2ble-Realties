@@ -15,7 +15,7 @@ const MortgageCalculator: React.FC<MortgageCalculatorProps> = ({ lang }) => {
                         <img
                             src="/logo-davivienda.png"
                             alt="Davivienda"
-                            className="h-16 lg:h-20 object-contain"
+                            className="h-[72px] lg:h-[88px] object-contain"
                         />
                     </div>
 
