@@ -140,7 +140,7 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
         {
           title: "New Section",
           mainTitle: <>Prospero<br /><span className="italic font-extralight text-slate-300">Lasso</span></>,
-          description: "Placeholder text for the fourth section. Description goes here.",
+          description: "Providing comprehensive and expert guidance at every stage of your acquisition or sale process.",
           image: "/foto-prospero.jpg",
           stats: [
             {
@@ -332,7 +332,7 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
         {
           title: "Nueva Sección",
           mainTitle: <>Prospero<br /><span className="italic font-extralight text-slate-300">Lasso</span></>,
-          description: "Texto de ejemplo para la cuarta sección. Aquí puedes colocar la descripción que desees.",
+          description: "Brindando acompañamiento integral y experto en cada etapa de su proceso de adquisición o venta.",
           image: "/foto-prospero.jpg",
           stats: [
             {
