@@ -8,7 +8,7 @@ interface MortgageCalculatorProps {
 const MortgageCalculator: React.FC<MortgageCalculatorProps> = ({ lang }) => {
     return (
         <section className="bg-white py-24 lg:py-32 relative overflow-hidden">
-            <div className="container mx-auto px-6 lg:px-10">
+            <div className="container mx-auto px-6 lg:px-10 reveal">
                 <div className="flex flex-col items-center justify-center max-w-4xl mx-auto">
                     {/* Davivienda Logo */}
                     <div className="mb-12 apple-reveal" style={{ transitionDelay: '0.1s' }}>
