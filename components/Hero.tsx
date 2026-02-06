@@ -58,36 +58,21 @@ const Hero: React.FC<HeroProps> = ({ lang }) => {
 
                         {/* Image 1: Small Top Right (Detail) */}
                         <div className="absolute top-0 right-10 w-48 h-64 rounded-t-[100px] rounded-b-[20px] overflow-hidden border-4 border-white/5 shadow-2xl z-10 animate-float-slow">
-                            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=600" className="w-full h-full object-cover" alt="Detail" />
-                            <div className="absolute bottom-4 left-4 bg-navy/80 backdrop-blur-md px-4 py-2 rounded-full">
-                                <span className="text-[9px] text-white uppercase tracking-widest">Interiors</span>
-                            </div>
+                            <img src="/foto-interior-3.jpg" className="w-full h-full object-cover" alt="Detail" />
                         </div>
 
                         {/* Image 2: Main Center (Facade/Hero) */}
                         <div className="absolute top-20 left-10 w-80 h-[500px] rounded-[40px] overflow-hidden border border-white/10 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] z-20">
                             {/* Updated URL: Verified high quality building facade */}
-                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800" className="w-full h-full object-cover" alt="Main" />
-
-                            {/* Info Card Overlay */}
-                            <div className="absolute bottom-8 left-8 right-8 bg-white/10 backdrop-blur-xl p-6 rounded-3xl border border-white/20">
-                                <div className="flex justify-between items-end">
-                                    <div>
-                                        <p className="text-xs text-white/70 uppercase tracking-widest mb-1">Costa del Este</p>
-                                        <p className="text-xl text-white font-serif">The Regent</p>
-                                    </div>
-                                    <span className="text-champagne font-bold">$1.2M</span>
-                                </div>
-                            </div>
+                            {/* Updated URL: Verified high quality building facade */}
+                            <img src="/foto-interior-2.jpg" className="w-full h-full object-cover" alt="Main" />
                         </div>
 
                         {/* Image 3: Small Bottom Right (Lifestyle) */}
                         <div className="absolute bottom-20 -right-4 w-56 h-40 rounded-[30px] overflow-hidden border-4 border-white/5 shadow-2xl z-30 animate-float-delayed">
                             {/* Updated URL: Verified reliable lifestyle/pool image */}
-                            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=600" className="w-full h-full object-cover" alt="Lifestyle" />
-                            <div className="absolute top-4 right-4 bg-champagne text-white text-[10px] font-bold px-3 py-1 rounded-full">
-                                FEATURED
-                            </div>
+                            {/* Updated URL: Verified reliable lifestyle/pool image */}
+                            <img src="/foto-interior-4.jpg" className="w-full h-full object-cover" alt="Lifestyle" />
                         </div>
 
                     </div>
