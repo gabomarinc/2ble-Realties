@@ -122,7 +122,7 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           image: "/foto-jonathan.jpg",
           stats: [
             {
-              value: <a href="tel:+50763145710" className="flex items-center gap-3 text-xl lg:text-2xl hover:text-champagne transition-colors"><Phone className="w-5 h-5 lg:w-6 lg:h-6 text-champagne" /> <span>+507 6314-5710</span></a>,
+              value: <a href="https://wa.me/50763145710" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-xl lg:text-2xl hover:text-champagne transition-colors"><Phone className="w-5 h-5 lg:w-6 lg:h-6 text-champagne" /> <span>+507 6314-5710</span></a>,
             }
           ]
         },
@@ -133,7 +133,7 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           image: "/foto-yiniva.jpg",
           stats: [
             {
-              value: <a href="tel:+50767635522" className="flex items-center gap-3 text-xl lg:text-2xl hover:text-champagne transition-colors"><Phone className="w-5 h-5 lg:w-6 lg:h-6 text-champagne" /> <span>+507 6763-5522</span></a>,
+              value: <a href="https://wa.me/50767635522" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-xl lg:text-2xl hover:text-champagne transition-colors"><Phone className="w-5 h-5 lg:w-6 lg:h-6 text-champagne" /> <span>+507 6763-5522</span></a>,
             }
           ]
         },
@@ -144,7 +144,7 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           image: "/foto-prospero.jpg",
           stats: [
             {
-              value: <a href="tel:+50762801439" className="flex items-center gap-3 text-xl lg:text-2xl hover:text-champagne transition-colors"><Phone className="w-5 h-5 lg:w-6 lg:h-6 text-champagne" /> <span>+507 6280-1439</span></a>,
+              value: <a href="https://wa.me/50762801439" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-xl lg:text-2xl hover:text-champagne transition-colors"><Phone className="w-5 h-5 lg:w-6 lg:h-6 text-champagne" /> <span>+507 6280-1439</span></a>,
             }
           ]
         }
@@ -314,7 +314,7 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           image: "/foto-jonathan.jpg",
           stats: [
             {
-              value: <a href="tel:+50763145710" className="flex items-center gap-3 text-xl lg:text-2xl hover:text-champagne transition-colors"><Phone className="w-5 h-5 lg:w-6 lg:h-6 text-champagne" /> <span>+507 6314-5710</span></a>,
+              value: <a href="https://wa.me/50763145710" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-xl lg:text-2xl hover:text-champagne transition-colors"><Phone className="w-5 h-5 lg:w-6 lg:h-6 text-champagne" /> <span>+507 6314-5710</span></a>,
             }
           ]
         },
@@ -325,7 +325,7 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           image: "/foto-yiniva.jpg",
           stats: [
             {
-              value: <a href="tel:+50767635522" className="flex items-center gap-3 text-xl lg:text-2xl hover:text-champagne transition-colors"><Phone className="w-5 h-5 lg:w-6 lg:h-6 text-champagne" /> <span>+507 6763-5522</span></a>,
+              value: <a href="https://wa.me/50767635522" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-xl lg:text-2xl hover:text-champagne transition-colors"><Phone className="w-5 h-5 lg:w-6 lg:h-6 text-champagne" /> <span>+507 6763-5522</span></a>,
             }
           ]
         },
@@ -336,7 +336,7 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           image: "/foto-prospero.jpg",
           stats: [
             {
-              value: <a href="tel:+50762801439" className="flex items-center gap-3 text-xl lg:text-2xl hover:text-champagne transition-colors"><Phone className="w-5 h-5 lg:w-6 lg:h-6 text-champagne" /> <span>+507 6280-1439</span></a>,
+              value: <a href="https://wa.me/50762801439" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-xl lg:text-2xl hover:text-champagne transition-colors"><Phone className="w-5 h-5 lg:w-6 lg:h-6 text-champagne" /> <span>+507 6280-1439</span></a>,
             }
           ]
         }
