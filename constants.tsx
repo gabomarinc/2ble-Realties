@@ -107,7 +107,7 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           title: "2Ble Realty",
           mainTitle: <>Strategic <span className="italic font-extralight text-slate-300">Allies</span></>,
           description: "Here you will find the experts who will guide you in every step you take.",
-          image: "/logos-aliados.jpg",
+          image: "/logos-aliados-2.jpg",
           logoOverlay: false,
           stats: [
             { value: "10+", label: "Years Experience" },
@@ -299,7 +299,7 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           title: "2Ble Realty",
           mainTitle: <>Aliados <span className="italic font-extralight text-slate-300">Estratégicos</span></>,
           description: "Aquí encontrarás a los expertos que te guiarán en cada paso que des.",
-          image: "/logos-aliados.jpg",
+          image: "/logos-aliados-2.jpg",
           logoOverlay: false,
           stats: [
             { value: "+10", label: "Años de Experiencia" },
