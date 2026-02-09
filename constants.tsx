@@ -29,7 +29,7 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           image: '/fotos-2bleweb/Panama Pacifico/portada.jpeg',
           fullDescription: 'Combines nature, modern design, security and sustainability, with a sense of open spaces and green areas like no other, ideal for those who value quality of life.',
           gallery: [
-            { image: '/fotos-2bleweb/Panama Pacifico/centriqo-188.jpg', title: 'Centriquo', price: 'From $188.000' },
+            { image: '/fotos-2bleweb/Panama Pacifico/centriqo-188.jpg', title: 'Cëntriqo', price: 'From $188.000' },
             { image: '/fotos-2bleweb/Panama Pacifico/explora-603.jpg', title: 'Explora', price: 'From $603.000' },
             { image: '/fotos-2bleweb/Panama Pacifico/lotes-sanctuary-880.jpeg', title: 'Sanctuary Lots', price: 'From $880.000' }
           ],
@@ -74,8 +74,7 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           gallery: [
             { image: '/fotos-2bleweb/Inversion/portada-nautilus-205.jpg', title: 'Nautilus', price: 'From $205.000' },
             { image: '/fotos-2bleweb/Inversion/boquete-pino-alto-224.jpg', title: 'Pino Alto (Boquete)', price: 'From $224.000' },
-            { image: '/fotos-2bleweb/Inversion/the-westin-residences-424.jpg', title: 'The Westin Residences', price: 'From $424.000' },
-            { image: '/fotos-2bleweb/Inversion/the-westin-residences-424-2.jpg', title: 'The Westin Sembrador', price: 'From $424.000' }
+            { image: '/fotos-2bleweb/Inversion/the-westin-residences-424-2.jpg', title: 'The Westin Residences', price: 'From $424.000' }
           ],
           highlights: ['High appreciation', 'Dynamic real estate market', 'High demand']
         }
@@ -221,7 +220,7 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           image: '/fotos-2bleweb/Panama Pacifico/portada.jpeg',
           fullDescription: 'Combina naturaleza, diseño moderno, seguridad y sostenibilidad, con una sensación de espacios abiertos y áreas verdes como ninguna otra, ideal para los que valoran calidad de vida.',
           gallery: [
-            { image: '/fotos-2bleweb/Panama Pacifico/centriqo-188.jpg', title: 'Centriquo', price: 'Desde $188.000' },
+            { image: '/fotos-2bleweb/Panama Pacifico/centriqo-188.jpg', title: 'Cëntriqo', price: 'Desde $188.000' },
             { image: '/fotos-2bleweb/Panama Pacifico/explora-603.jpg', title: 'Explora', price: 'Desde $603.000' },
             { image: '/fotos-2bleweb/Panama Pacifico/lotes-sanctuary-880.jpeg', title: 'Lotes Sanctuary', price: 'Desde $880.000' }
           ],
@@ -266,8 +265,7 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           gallery: [
             { image: '/fotos-2bleweb/Inversion/portada-nautilus-205.jpg', title: 'Nautilus', price: 'Desde $205.000' },
             { image: '/fotos-2bleweb/Inversion/boquete-pino-alto-224.jpg', title: 'Pino Alto (Boquete)', price: 'Desde $224.000' },
-            { image: '/fotos-2bleweb/Inversion/the-westin-residences-424.jpg', title: 'The Westin Residences', price: 'Desde $424.000' },
-            { image: '/fotos-2bleweb/Inversion/the-westin-residences-424-2.jpg', title: 'The Westin Sembrador', price: 'Desde $424.000' }
+            { image: '/fotos-2bleweb/Inversion/the-westin-residences-424-2.jpg', title: 'The Westin Residences', price: 'Desde $424.000' }
           ],
           highlights: ['Alta valorización', 'Mercado inmobiliario dinámico', 'Alta demanda']
         }
