@@ -33,6 +33,7 @@ export interface ContentData {
     about: string;
     properties: string;
     developments: string;
+    calculator: string;
     invest: string;
     contact: string;
   };

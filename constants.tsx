@@ -8,6 +8,7 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
       about: "The Vision",
       properties: "Listings",
       developments: "Zones",
+      calculator: "Reverse Purchase",
       invest: "Investments",
       contact: "Connect"
     },
@@ -200,6 +201,7 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
       about: "La Visión",
       properties: "Propiedades",
       developments: "Zonas",
+      calculator: "Compra Inversa",
       invest: "Inversiones",
       contact: "Conectar"
     },

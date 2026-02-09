@@ -7,7 +7,7 @@ interface MortgageCalculatorProps {
 
 const MortgageCalculator: React.FC<MortgageCalculatorProps> = ({ lang }) => {
     return (
-        <section className="bg-white py-24 lg:py-32 relative overflow-hidden">
+        <section id="calculator" className="bg-white py-24 lg:py-32 relative overflow-hidden">
             <div className="container mx-auto px-6 lg:px-10 reveal">
                 <div className="flex flex-col items-center justify-center w-full mx-auto">
                     {/* Davivienda Logo */}
