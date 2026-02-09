@@ -25,6 +25,12 @@ const Contact: React.FC<ContactProps> = ({ lang }) => {
                         <MessageCircle className="w-5 h-5 lg:w-6 lg:h-6" />
                         {content.whatsappButton}
                     </a>
+                    <div className="mt-12 lg:mt-16">
+                        <p className="text-white/40 text-base lg:text-lg font-light leading-relaxed">
+                            Bella Vista, Federico Boyd y Calle 51<br />
+                            Edificio Scotiaplaza, Piso 7, Oficina 21
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>

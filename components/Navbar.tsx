@@ -125,8 +125,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, toggleLang, navContent }) => {
                         <div className="w-12 h-[1px] bg-champagne mb-8"></div>
                         <p className="text-white/40 text-sm font-light">
                             Double the Standard.<br />
-                            Bella Vista, Federico Boyd y Calle 51<br />
-                            Edificio Scotiaplaza, Piso 7, Oficina 21
+                            Panama City, Panama
                         </p>
                     </div>
                 </div>
