@@ -91,12 +91,12 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
       ]
     },
     reversePurchase: {
-      title: "You Rest, We Hunt",
+      title: "You Rest, We Work",
       subtitle: "Have you wondered how to start buying a house or apartment?",
       description: "We know your time is very valuable, that's why we created the 'Reverse Purchase' method, which is designed to make your real estate life easier and your purchase much simpler.",
       steps: [
         { title: "Strategic Briefing", desc: "We define your legacy goals, mapping out every emotional and financial requirement." },
-        { title: "The Market Hunt", desc: "Access to off-market inventory and exclusive pre-sales before the general public." },
+        { title: "The Market Work", desc: "Access to off-market inventory and exclusive pre-sales before the general public." },
         { title: "Flawless Execution", desc: "White-glove negotiation and complete legal peace of mind. We handle the friction; you enjoy the result." }
       ]
     },
@@ -190,7 +190,7 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
       inquireInterest: "Inquire Interest",
       privatePortfolio: "Private Portfolio",
       clickInquiry: "Click for inquiry",
-      curated: "100% Curated",
+      curated: "",
       since2010: "Since 2010"
     }
   },
@@ -282,12 +282,12 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
       ]
     },
     reversePurchase: {
-      title: "Tú Descansa, Nosotros Cazamos",
+      title: "Tú Descansa, Nosotros Trabajamos",
       subtitle: "¿Te has preguntado como iniciar la compra de una casa o apto?",
       description: "Sabemos que tu tiempo es muy valioso, por eso creamos el método de ¨Compra inversa¨, el cual está diseñado para hacer tu vida inmobiliaria más fácil y tu compra mucho más sencilla.",
       steps: [
         { title: "Briefing Estratégico", desc: "Definimos sus metas de legado, mapeando cada requerimiento emocional y financiero." },
-        { title: "La Cacería de Mercado", desc: "Acceso a inventario fuera de mercado y preventas exclusivas antes que el público general." },
+        { title: "El Trabajo de Mercado", desc: "Acceso a inventario fuera de mercado y preventas exclusivas antes que el público general." },
         { title: "Ejecución Impecable", desc: "Negociación de guante blanco y paz mental legal total. Nosotros gestionamos la fricción; usted disfruta el resultado." }
       ]
     },
@@ -381,7 +381,7 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
       inquireInterest: "Solicitar Información",
       privatePortfolio: "Portafolio Privado",
       clickInquiry: "Clic para consultar",
-      curated: "100% Curado",
+      curated: "",
       since2010: "Desde 2010"
     }
   }
