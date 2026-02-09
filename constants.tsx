@@ -180,7 +180,8 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
       name: "Your Name",
       email: "Email Address",
       message: "How can we elevate your portfolio?",
-      submit: "Send Inquiry"
+      submit: "Send Inquiry",
+      whatsappButton: "Contact Us"
     },
     ui: {
       premiumAsset: "Premium Asset",
@@ -371,7 +372,8 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
       name: "Su Nombre",
       email: "Correo Electrónico",
       message: "¿Cómo podemos elevar su portafolio?",
-      submit: "Enviar Consulta"
+      submit: "Enviar Consulta",
+      whatsappButton: "Contáctanos"
     },
     ui: {
       premiumAsset: "Activo Premium",

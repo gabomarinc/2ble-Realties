@@ -91,6 +91,7 @@ export interface ContentData {
     email: string;
     message: string;
     submit: string;
+    whatsappButton: string;
   };
   ui: {
     premiumAsset: string;
