@@ -63,7 +63,7 @@ const App: React.FC = () => {
 
       {/* WHATSAPP */}
       <a
-        href="https://wa.me/50700000000"
+        href="https://wa.me/50763145710"
         target="_blank"
         className="fixed bottom-10 right-10 z-[70] bg-champagne text-white p-6 rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-transform"
       >
