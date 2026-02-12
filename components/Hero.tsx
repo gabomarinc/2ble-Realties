@@ -58,21 +58,21 @@ const Hero: React.FC<HeroProps> = ({ lang }) => {
 
                         {/* Image 1: Small Top Right (Detail) */}
                         <div className="absolute top-0 right-10 w-48 h-64 rounded-t-[100px] rounded-b-[20px] overflow-hidden border-4 border-white/5 shadow-2xl z-10 animate-float-slow">
-                            <img src="/foto-interior-3.jpg" className="w-full h-full object-cover" alt="Detail" />
+                            <img src="foto-interior-3.jpg" className="w-full h-full object-cover" alt="Detail" />
                         </div>
 
                         {/* Image 2: Main Center (Facade/Hero) */}
                         <div className="absolute top-20 left-10 w-80 h-[500px] rounded-[40px] overflow-hidden border border-white/10 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] z-20">
                             {/* Updated URL: Verified high quality building facade */}
                             {/* Updated URL: Verified high quality building facade */}
-                            <img src="/foto-interior-2.jpg" className="w-full h-full object-cover" alt="Main" />
+                            <img src="foto-interior-2.jpg" className="w-full h-full object-cover" alt="Main" />
                         </div>
 
                         {/* Image 3: Small Bottom Right (Lifestyle) */}
                         <div className="absolute bottom-20 -right-4 w-56 h-40 rounded-[30px] overflow-hidden border-4 border-white/5 shadow-2xl z-30 animate-float-delayed">
                             {/* Updated URL: Verified reliable lifestyle/pool image */}
                             {/* Updated URL: Verified reliable lifestyle/pool image */}
-                            <img src="/foto-interior-4.jpg" className="w-full h-full object-cover" alt="Lifestyle" />
+                            <img src="foto-interior-4.jpg" className="w-full h-full object-cover" alt="Lifestyle" />
                         </div>
 
                     </div>

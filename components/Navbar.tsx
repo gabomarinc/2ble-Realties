@@ -52,7 +52,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, toggleLang, navContent }) => {
           `}>
                     <div className="flex items-center gap-4">
                         <img
-                            src={scrolled ? "/logo-blanco.png" : "/logo-negro.png"}
+                            src={scrolled ? "logo-blanco.png" : "logo-negro.png"}
                             alt="Panama Elite"
                             className="h-[38px] w-auto object-contain transition-all duration-300"
                         />
@@ -103,7 +103,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, toggleLang, navContent }) => {
             <div className={`fixed inset-0 bg-[#0B1221] z-[60] transition-transform duration-500 ease-in-out ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                 <div className="flex flex-col h-full p-10">
                     <div className="flex justify-between items-center mb-20">
-                        <img src="/logo-blanco.png" alt="Panama Elite" className="h-[38px] w-auto object-contain" />
+                        <img src="logo-blanco.png" alt="Panama Elite" className="h-[38px] w-auto object-contain" />
                         <button onClick={() => setMobileMenuOpen(false)} className="text-white">
                             <X size={32} />
                         </button>
