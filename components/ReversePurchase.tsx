@@ -43,7 +43,7 @@ const ReversePurchase: React.FC<ReversePurchaseProps> = ({ lang, content }) => {
                     <div className="order-1 lg:order-2 relative reveal">
                         <div className="apple-reveal relative rounded-[40px] lg:rounded-[50px] overflow-hidden shadow-2xl h-[400px] lg:h-[600px] w-full" style={{ transitionDelay: '0.2s' }}>
                             <img
-                                src="/foto-interior.jpg"
+                                src="foto-interior.jpg"
                                 alt="Concierge"
                                 className="w-full h-full object-cover object-top"
                             />
