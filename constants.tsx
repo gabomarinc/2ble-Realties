@@ -6,7 +6,6 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
   en: {
     nav: {
       about: "The Vision",
-      properties: "Listings",
       developments: "Zones",
       calculator: "Reverse Purchase",
       invest: "Investments",
@@ -34,7 +33,8 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
             { image: 'fotos-2bleweb/Panama Pacifico/explora-603.jpg', title: 'Explora', price: 'From $603.000' },
             { image: 'fotos-2bleweb/Panama Pacifico/lotes-sanctuary-880.jpeg', title: 'Sanctuary Lots', price: 'From $880.000' }
           ],
-          highlights: ['Master Plan', 'International Airport']
+          highlights: ['Master Plan', 'International Airport'],
+          ctaUrl: 'https://panamapacificopartners.com/'
         },
         {
           id: 'd2',
@@ -49,7 +49,8 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
             { image: 'fotos-2bleweb/Santa Maria/corotu-550.jpg', title: 'Corotu', price: 'From $550.000' },
             { image: 'fotos-2bleweb/Santa Maria/the-woods-1060.jpg', title: 'The Woods', price: 'From $1.060.000' }
           ],
-          highlights: ['Golf Course', 'Private Club']
+          highlights: ['Golf Course', 'Private Club'],
+          ctaUrl: 'https://api.whatsapp.com/send/?phone=50763145710&text&type=phone_number&app_absent=0'
         },
         {
           id: 'd3',
@@ -63,7 +64,8 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
             { image: 'fotos-2bleweb/Ciudad/ipanema-300.jpg', title: 'Ipanema', price: 'From $300.000' },
             { image: 'fotos-2bleweb/Ciudad/ocean-reef-the-palms-1350.jpg', title: 'The Palms (Ocean Reef)', price: 'From $1.350.000' }
           ],
-          highlights: ['Global connectivity', 'Financial and logistics hub']
+          highlights: ['Global connectivity', 'Financial and logistics hub'],
+          ctaUrl: 'https://api.whatsapp.com/send/?phone=50763145710&text&type=phone_number&app_absent=0'
         },
         {
           id: 'd4',
@@ -77,7 +79,8 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
             { image: 'fotos-2bleweb/Inversion/boquete-pino-alto-224.jpg', title: 'Pino Alto (Boquete)', price: 'From $224.000' },
             { image: 'fotos-2bleweb/Inversion/the-westin-residences-424-2.jpg', title: 'The Westin Residences', price: 'From $424.000' }
           ],
-          highlights: ['High appreciation', 'Dynamic real estate market', 'High demand']
+          highlights: ['High appreciation', 'Dynamic real estate market', 'High demand'],
+          ctaUrl: 'https://api.whatsapp.com/send/?phone=50763145710&text&type=phone_number&app_absent=0'
         }
       ]
     },
@@ -116,7 +119,7 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           ]
         },
         {
-          title: "Global Reach",
+          title: "Unique Experience",
           mainTitle: <>Jonathan<br /><span className="italic font-extralight text-slate-300">Valverde</span></>,
           description: "Accessing an extensive network of international investors and premium properties.",
           image: "foto-jonathan.jpg",
@@ -138,13 +141,24 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           ]
         },
         {
-          title: "New Section",
+          title: "Personalized Follow-up",
           mainTitle: <>Prospero<br /><span className="italic font-extralight text-slate-300">Lasso</span></>,
           description: "Providing comprehensive and expert guidance at every stage of your acquisition or sale process.",
           image: "foto-prospero.jpg",
           stats: [
             {
               value: <a href="https://wa.me/50762801439" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-xl lg:text-2xl hover:text-champagne transition-colors"><Phone className="w-5 h-5 lg:w-6 lg:h-6 text-champagne" /> <span>+507 6280-1439</span></a>,
+            }
+          ]
+        },
+        {
+          title: "Strategic Investment",
+          mainTitle: <>Liriola<br /><span className="italic font-extralight text-slate-300">Cedeño</span></>,
+          description: "Investing in your home is investing in your future.",
+          image: "liriola.jpg",
+          stats: [
+            {
+              value: <a href="https://wa.me/50762622115" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-xl lg:text-2xl hover:text-champagne transition-colors"><Phone className="w-5 h-5 lg:w-6 lg:h-6 text-champagne" /> <span>+507 6262-2115</span></a>,
             }
           ]
         }
@@ -199,7 +213,6 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
   es: {
     nav: {
       about: "La Visión",
-      properties: "Propiedades",
       developments: "Zonas",
       calculator: "Compra Inversa",
       invest: "Inversiones",
@@ -227,7 +240,8 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
             { image: 'fotos-2bleweb/Panama Pacifico/explora-603.jpg', title: 'Explora', price: 'Desde $603.000' },
             { image: 'fotos-2bleweb/Panama Pacifico/lotes-sanctuary-880.jpeg', title: 'Lotes Sanctuary', price: 'Desde $880.000' }
           ],
-          highlights: ['Master Plan', 'Aeropuerto internacional']
+          highlights: ['Master Plan', 'Aeropuerto internacional'],
+          ctaUrl: 'https://panamapacificopartners.com/'
         },
         {
           id: 'd2',
@@ -242,7 +256,8 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
             { image: 'fotos-2bleweb/Santa Maria/corotu-550.jpg', title: 'Corotu', price: 'Desde $550.000' },
             { image: 'fotos-2bleweb/Santa Maria/the-woods-1060.jpg', title: 'The Woods', price: 'Desde $1.060.000' }
           ],
-          highlights: ['Cancha de Golf', 'Club Privado']
+          highlights: ['Cancha de Golf', 'Club Privado'],
+          ctaUrl: 'https://api.whatsapp.com/send/?phone=50763145710&text&type=phone_number&app_absent=0'
         },
         {
           id: 'd3',
@@ -256,7 +271,8 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
             { image: 'fotos-2bleweb/Ciudad/ipanema-300.jpg', title: 'Ipanema', price: 'Desde $300.000' },
             { image: 'fotos-2bleweb/Ciudad/ocean-reef-the-palms-1350.jpg', title: 'The Palms (Ocean Reef)', price: 'Desde $1.350.000' }
           ],
-          highlights: ['Conectividad global', 'Hub financiero y logistico']
+          highlights: ['Conectividad global', 'Hub financiero y logistico'],
+          ctaUrl: 'https://api.whatsapp.com/send/?phone=50763145710&text&type=phone_number&app_absent=0'
         },
         {
           id: 'd4',
@@ -270,7 +286,8 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
             { image: 'fotos-2bleweb/Inversion/boquete-pino-alto-224.jpg', title: 'Pino Alto (Boquete)', price: 'Desde $224.000' },
             { image: 'fotos-2bleweb/Inversion/the-westin-residences-424-2.jpg', title: 'The Westin Residences', price: 'Desde $424.000' }
           ],
-          highlights: ['Alta valorización', 'Mercado inmobiliario dinámico', 'Alta demanda']
+          highlights: ['Alta valorización', 'Mercado inmobiliario dinámico', 'Alta demanda'],
+          ctaUrl: 'https://api.whatsapp.com/send/?phone=50763145710&text&type=phone_number&app_absent=0'
         }
       ]
     },
@@ -309,7 +326,7 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           ]
         },
         {
-          title: "Alcance Global",
+          title: "Experiencia única",
           mainTitle: <>Jonathan<br /><span className="italic font-extralight text-slate-300">Valverde</span></>,
           description: "Accediendo a una extensa red de inversores internacionales y propiedades premium.",
           image: "foto-jonathan.jpg",
@@ -331,13 +348,24 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           ]
         },
         {
-          title: "Nueva Sección",
+          title: "Seguimiento Personalizado",
           mainTitle: <>Prospero<br /><span className="italic font-extralight text-slate-300">Lasso</span></>,
           description: "Brindando acompañamiento integral y experto en cada etapa de su proceso de adquisición o venta.",
           image: "foto-prospero.jpg",
           stats: [
             {
               value: <a href="https://wa.me/50762801439" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-xl lg:text-2xl hover:text-champagne transition-colors"><Phone className="w-5 h-5 lg:w-6 lg:h-6 text-champagne" /> <span>+507 6280-1439</span></a>,
+            }
+          ]
+        },
+        {
+          title: "Inversión Patrimonial",
+          mainTitle: <>Liriola<br /><span className="italic font-extralight text-slate-300">Cedeño</span></>,
+          description: "Invertir en tu hogar es invertir en tu futuro.",
+          image: "liriola.jpg",
+          stats: [
+            {
+              value: <a href="https://wa.me/50762622115" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-xl lg:text-2xl hover:text-champagne transition-colors"><Phone className="w-5 h-5 lg:w-6 lg:h-6 text-champagne" /> <span>+507 6262-2115</span></a>,
             }
           ]
         }

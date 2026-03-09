@@ -26,12 +26,13 @@ export interface Development {
   fullDescription?: string;
   gallery?: (string | GalleryItem)[];
   highlights?: string[];
+  ctaUrl?: string;
 }
 
 export interface ContentData {
   nav: {
     about: string;
-    properties: string;
+    properties?: string;
     developments: string;
     calculator: string;
     invest: string;

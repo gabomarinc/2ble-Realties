@@ -56,7 +56,7 @@ const Authority: React.FC<AuthorityProps> = ({ lang }) => {
                 </div>
 
                 {/* Team Grid */}
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 lg:gap-12">
                     {teamMembers.map((member, index) => (
                         <div key={index} className="group bg-slate-50 rounded-[40px] p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
                             <div className="rounded-[30px] overflow-hidden aspect-[4/5] mb-8 relative">

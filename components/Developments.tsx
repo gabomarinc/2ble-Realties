@@ -150,9 +150,14 @@ const Developments: React.FC<DevelopmentsProps> = ({ lang }) => {
                                 )}
 
                                 <div className="mt-12 pt-8 border-t border-slate-100 flex justify-end">
-                                    <button className="bg-navy text-white px-8 py-4 rounded-full font-medium hover:bg-champagne transition-colors flex items-center gap-2">
+                                    <a
+                                        href={selectedItem.ctaUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="bg-navy text-white px-8 py-4 rounded-full font-medium hover:bg-champagne transition-colors flex items-center gap-2"
+                                    >
                                         {ui.inquireInterest} <ArrowRight size={18} />
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
