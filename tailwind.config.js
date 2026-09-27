@@ -2,7 +2,9 @@
 export default {
   content: [
     "./index.html",
-    "./**/*.{js,ts,jsx,tsx}",
+    "./*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./blog/**/*.{ts,tsx}",
   ],
   theme: {
     extend: {
@@ -10,10 +12,11 @@ export default {
         champagne: '#C5A059',
         navy: '#0B1221',
         'deep-charcoal': '#070B14',
+        'champagne-dark': '#86672C',
       },
       fontFamily: {
-        serif: ['"Playfair Display"', 'serif'],
-        sans: ['"Inter"', 'sans-serif'],
+        serif: ['"Playfair Display Variable"', 'Georgia', 'serif'],
+        sans: ['"Inter Variable"', 'system-ui', 'sans-serif'],
       },
     },
   },

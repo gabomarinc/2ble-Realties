@@ -8,7 +8,7 @@ Debes subir ÚNICAMENTE el contenido de la carpeta `dist/`. No subas todo el pro
 Normalmente, en Hostinger, el lugar donde debes subir estos archivos es la carpeta `public_html`.
 
 ## Pasos para subir el proyecto:
-1.  **Generar la carpeta dist** (Ya lo hice por ti, pero si haces cambios futuros, corre `npm run build`).
+1.  **Generar la carpeta dist**: corre `npm run build`. Esto compila y además **pre-renderiza** el HTML de `/` (español) y `/en/` (inglés), y genera `sitemap.xml`. Si agregas o cambias fotos, ponlas en `images-src/` y corre antes `npm run images` (las convierte a WebP en `public/img/`).
 2.  Accede a tu panel de Hostinger -> **Administrador de Archivos**.
 3.  Navega hasta la carpeta `public_html`.
 4.  Sube todos los archivos y carpetas que están dentro de la carpeta `dist` de este proyecto.
@@ -23,9 +23,21 @@ Normalmente, en Hostinger, el lugar donde debes subir estos archivos es la carpe
 ```
 public_html/
 ├── assets/
-├── fotos-2bleweb/
+├── en/index.html        ← versión en inglés
+├── img/                 ← fotos optimizadas (WebP)
 ├── .htaccess
-├── index.html
-├── manifest.webmanifest
-└── ... (otros archivos de imagen)
+├── index.html           ← versión en español
+├── robots.txt
+├── sitemap.xml
+├── llms.txt             ← resumen para ChatGPT, Gemini, etc.
+├── og-image.jpg
+├── icon-*.png, apple-touch-icon.png
+└── manifest.webmanifest, sw.js, registerSW.js, workbox-*.js
 ```
+
+**Importante:** antes de subir, borra de `public_html` las carpetas/archivos viejos (`fotos-2bleweb/`, `*.jpg`, `*.png` sueltos, `pwa-*.svg`) para que no queden duplicados.
+
+## Después de publicar
+1. En Google Search Console, verifica `https://2ble.realty` y envía `https://2ble.realty/sitemap.xml`.
+2. Prueba los datos estructurados en https://search.google.com/test/rich-results.
+3. Mide en https://pagespeed.web.dev/.

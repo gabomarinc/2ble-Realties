@@ -26,12 +26,12 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           title: 'Panama Pacifico',
           location: 'Panama West',
           description: 'Combines nature, modern design, security and sustainability.',
-          image: 'fotos-2bleweb/Panama Pacifico/portada.jpeg',
+          image: 'img/zonas/panama-pacifico/portada.webp',
           fullDescription: 'Combines nature, modern design, security and sustainability, with a sense of open spaces and green areas like no other, ideal for those who value quality of life.',
           gallery: [
-            { image: 'fotos-2bleweb/Panama Pacifico/centriqo-188.jpg', title: 'Cëntriqo', price: 'From $188.000' },
-            { image: 'fotos-2bleweb/Panama Pacifico/explora-603.jpg', title: 'Explora', price: 'From $603.000' },
-            { image: 'fotos-2bleweb/Panama Pacifico/lotes-sanctuary-880.jpeg', title: 'Sanctuary Lots', price: 'From $880.000' }
+            { image: 'img/zonas/panama-pacifico/centriqo-188.webp', title: 'Cëntriqo', price: 'From $188.000' },
+            { image: 'img/zonas/panama-pacifico/explora-603.webp', title: 'Explora', price: 'From $603.000' },
+            { image: 'img/zonas/panama-pacifico/lotes-sanctuary-880.webp', title: 'Sanctuary Lots', price: 'From $880.000' }
           ],
           highlights: ['Master Plan', 'International Airport'],
           ctaUrl: 'https://panamapacificopartners.com/'
@@ -41,13 +41,13 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           title: 'Santa Maria',
           location: 'Costa del Este',
           description: 'Luxury and nature in one of the most exclusive sectors.',
-          image: 'fotos-2bleweb/Santa Maria/portada.jpg',
+          image: 'img/zonas/santa-maria/portada.webp',
           fullDescription: 'One of the most exclusive and sought-after residential sectors in the country where luxury combines with nature, achieving a unique lifestyle.',
           gallery: [
-            { image: 'fotos-2bleweb/Santa Maria/bosco-475.jpg', title: 'Bosco', price: 'From $475.000' },
-            { image: 'fotos-2bleweb/Santa Maria/celeste-630.jpg', title: 'Celeste', price: 'From $630.000' },
-            { image: 'fotos-2bleweb/Santa Maria/corotu-550.jpg', title: 'Corotu', price: 'From $550.000' },
-            { image: 'fotos-2bleweb/Santa Maria/the-woods-1060.jpg', title: 'The Woods', price: 'From $1.060.000' }
+            { image: 'img/zonas/santa-maria/bosco-475.webp', title: 'Bosco', price: 'From $475.000' },
+            { image: 'img/zonas/santa-maria/celeste-630.webp', title: 'Celeste', price: 'From $630.000' },
+            { image: 'img/zonas/santa-maria/corotu-550.webp', title: 'Corotu', price: 'From $550.000' },
+            { image: 'img/zonas/santa-maria/the-woods-1060.webp', title: 'The Woods', price: 'From $1.060.000' }
           ],
           highlights: ['Golf Course', 'Private Club'],
           ctaUrl: 'https://api.whatsapp.com/send/?phone=50763145710&text&type=phone_number&app_absent=0'
@@ -57,12 +57,12 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           title: 'Panama City',
           location: 'Panama City',
           description: 'Vibrant, modern and cultural lifestyle.',
-          image: 'fotos-2bleweb/Ciudad/portada.jpg',
+          image: 'img/zonas/ciudad/portada.webp',
           fullDescription: 'Vibrant lifestyle close to everything, with first-world infrastructure and services, making it a modern city with great cultural wealth.',
           gallery: [
-            { image: 'fotos-2bleweb/Ciudad/costanera-2-aqua-325.jpeg', title: 'Costanera / Aqua', price: 'From $325.000' },
-            { image: 'fotos-2bleweb/Ciudad/ipanema-300.jpg', title: 'Ipanema', price: 'From $300.000' },
-            { image: 'fotos-2bleweb/Ciudad/ocean-reef-the-palms-1350.jpg', title: 'The Palms (Ocean Reef)', price: 'From $1.350.000' }
+            { image: 'img/zonas/ciudad/costanera-2-aqua-325.webp', title: 'Costanera / Aqua', price: 'From $325.000' },
+            { image: 'img/zonas/ciudad/ipanema-300.webp', title: 'Ipanema', price: 'From $300.000' },
+            { image: 'img/zonas/ciudad/ocean-reef-the-palms-1350.webp', title: 'The Palms (Ocean Reef)', price: 'From $1.350.000' }
           ],
           highlights: ['Global connectivity', 'Financial and logistics hub'],
           ctaUrl: 'https://api.whatsapp.com/send/?phone=50763145710&text&type=phone_number&app_absent=0'
@@ -72,12 +72,12 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           title: 'Investment',
           location: 'Panama',
           description: 'The best country to invest and retire.',
-          image: 'fotos-2bleweb/Inversion/portada-nautilus-205.jpg',
+          image: 'img/zonas/inversion/portada-nautilus-205.webp',
           fullDescription: 'Considered the best country to invest and retire thanks to its stable and dollarized economy, becoming one of the real estate markets with the highest demand.',
           gallery: [
-            { image: 'fotos-2bleweb/Inversion/portada-nautilus-205.jpg', title: 'Nautilus', price: 'From $205.000' },
-            { image: 'fotos-2bleweb/Inversion/boquete-pino-alto-224.jpg', title: 'Pino Alto (Boquete)', price: 'From $224.000' },
-            { image: 'fotos-2bleweb/Inversion/the-westin-residences-424-2.jpg', title: 'The Westin Residences', price: 'From $424.000' }
+            { image: 'img/zonas/inversion/portada-nautilus-205.webp', title: 'Nautilus', price: 'From $205.000' },
+            { image: 'img/zonas/inversion/boquete-pino-alto-224.webp', title: 'Pino Alto (Boquete)', price: 'From $224.000' },
+            { image: 'img/zonas/inversion/the-westin-residences-424-2.webp', title: 'The Westin Residences', price: 'From $424.000' }
           ],
           highlights: ['High appreciation', 'Dynamic real estate market', 'High demand'],
           ctaUrl: 'https://api.whatsapp.com/send/?phone=50763145710&text&type=phone_number&app_absent=0'
@@ -108,9 +108,9 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
       slides: [
         {
           title: "2Ble Realty",
-          mainTitle: <>Strategic <span className="italic font-extralight text-slate-300">Allies</span></>,
+          mainTitle: <>Strategic <span className="italic font-extralight text-slate-500">Allies</span></>,
           description: "Here you will find the experts who will guide you in every step you take.",
-          image: "logos-aliados-2.jpg",
+          image: "img/logos-aliados-2.webp",
           logoOverlay: false,
           stats: [
             { value: "10+", label: "Years Experience" },
@@ -120,9 +120,9 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
         },
         {
           title: "Unique Experience",
-          mainTitle: <>Jonathan<br /><span className="italic font-extralight text-slate-300">Valverde</span></>,
+          mainTitle: <>Jonathan<br /><span className="italic font-extralight text-slate-500">Valverde</span></>,
           description: "Accessing an extensive network of international investors and premium properties.",
-          image: "foto-jonathan.jpg",
+          image: "img/foto-jonathan.webp",
           stats: [
             {
               value: <a href="https://wa.me/50763145710" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-xl lg:text-2xl hover:text-champagne transition-colors"><Phone className="w-5 h-5 lg:w-6 lg:h-6 text-champagne" /> <span>+507 6314-5710</span></a>,
@@ -131,9 +131,9 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
         },
         {
           title: "Elite Advisory",
-          mainTitle: <>Yiniva<br /><span className="italic font-extralight text-slate-300">Cedeño</span></>,
+          mainTitle: <>Yiniva<br /><span className="italic font-extralight text-slate-500">Cedeño</span></>,
           description: "Providing data-driven insights to maximize your investment potential.",
-          image: "foto-yiniva.jpg",
+          image: "img/foto-yiniva.webp",
           stats: [
             {
               value: <a href="https://wa.me/50767635522" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-xl lg:text-2xl hover:text-champagne transition-colors"><Phone className="w-5 h-5 lg:w-6 lg:h-6 text-champagne" /> <span>+507 6763-5522</span></a>,
@@ -141,21 +141,10 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           ]
         },
         {
-          title: "Personalized Follow-up",
-          mainTitle: <>Prospero<br /><span className="italic font-extralight text-slate-300">Lasso</span></>,
-          description: "Providing comprehensive and expert guidance at every stage of your acquisition or sale process.",
-          image: "foto-prospero.jpg",
-          stats: [
-            {
-              value: <a href="https://wa.me/50762801439" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-xl lg:text-2xl hover:text-champagne transition-colors"><Phone className="w-5 h-5 lg:w-6 lg:h-6 text-champagne" /> <span>+507 6280-1439</span></a>,
-            }
-          ]
-        },
-        {
           title: "Strategic Investment",
-          mainTitle: <>Liriola<br /><span className="italic font-extralight text-slate-300">Cedeño</span></>,
+          mainTitle: <>Liriola<br /><span className="italic font-extralight text-slate-500">Cedeño</span></>,
           description: "Investing in your home is investing in your future.",
-          image: "liriola.jpg",
+          image: "img/liriola.webp",
           stats: [
             {
               value: <a href="https://wa.me/50762622115" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-xl lg:text-2xl hover:text-champagne transition-colors"><Phone className="w-5 h-5 lg:w-6 lg:h-6 text-champagne" /> <span>+507 6262-2115</span></a>,
@@ -233,12 +222,12 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           title: 'Panamá Pacífico',
           location: 'Panamá Oeste',
           description: 'Combina naturaleza, diseño moderno, seguridad y sostenibilidad.',
-          image: 'fotos-2bleweb/Panama Pacifico/portada.jpeg',
+          image: 'img/zonas/panama-pacifico/portada.webp',
           fullDescription: 'Combina naturaleza, diseño moderno, seguridad y sostenibilidad, con una sensación de espacios abiertos y áreas verdes como ninguna otra, ideal para los que valoran calidad de vida.',
           gallery: [
-            { image: 'fotos-2bleweb/Panama Pacifico/centriqo-188.jpg', title: 'Cëntriqo', price: 'Desde $188.000' },
-            { image: 'fotos-2bleweb/Panama Pacifico/explora-603.jpg', title: 'Explora', price: 'Desde $603.000' },
-            { image: 'fotos-2bleweb/Panama Pacifico/lotes-sanctuary-880.jpeg', title: 'Lotes Sanctuary', price: 'Desde $880.000' }
+            { image: 'img/zonas/panama-pacifico/centriqo-188.webp', title: 'Cëntriqo', price: 'Desde $188.000' },
+            { image: 'img/zonas/panama-pacifico/explora-603.webp', title: 'Explora', price: 'Desde $603.000' },
+            { image: 'img/zonas/panama-pacifico/lotes-sanctuary-880.webp', title: 'Lotes Sanctuary', price: 'Desde $880.000' }
           ],
           highlights: ['Master Plan', 'Aeropuerto internacional'],
           ctaUrl: 'https://panamapacificopartners.com/'
@@ -248,13 +237,13 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           title: 'Santa María',
           location: 'Costa del Este',
           description: 'Lujo y naturaleza en uno de los sectores más exclusivos.',
-          image: 'fotos-2bleweb/Santa Maria/portada.jpg',
+          image: 'img/zonas/santa-maria/portada.webp',
           fullDescription: 'Uno de los sectores residenciales mas exclusivos y cotizados del país donde se combina el lujo con la naturaleza, logrando un estilo de vida único.',
           gallery: [
-            { image: 'fotos-2bleweb/Santa Maria/bosco-475.jpg', title: 'Bosco', price: 'Desde $475.000' },
-            { image: 'fotos-2bleweb/Santa Maria/celeste-630.jpg', title: 'Celeste', price: 'Desde $630.000' },
-            { image: 'fotos-2bleweb/Santa Maria/corotu-550.jpg', title: 'Corotu', price: 'Desde $550.000' },
-            { image: 'fotos-2bleweb/Santa Maria/the-woods-1060.jpg', title: 'The Woods', price: 'Desde $1.060.000' }
+            { image: 'img/zonas/santa-maria/bosco-475.webp', title: 'Bosco', price: 'Desde $475.000' },
+            { image: 'img/zonas/santa-maria/celeste-630.webp', title: 'Celeste', price: 'Desde $630.000' },
+            { image: 'img/zonas/santa-maria/corotu-550.webp', title: 'Corotu', price: 'Desde $550.000' },
+            { image: 'img/zonas/santa-maria/the-woods-1060.webp', title: 'The Woods', price: 'Desde $1.060.000' }
           ],
           highlights: ['Cancha de Golf', 'Club Privado'],
           ctaUrl: 'https://api.whatsapp.com/send/?phone=50763145710&text&type=phone_number&app_absent=0'
@@ -264,12 +253,12 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           title: 'Ciudad de Panamá',
           location: 'Ciudad de Panamá',
           description: 'Estilo de vida vibrante, moderno y cultural.',
-          image: 'fotos-2bleweb/Ciudad/portada.jpg',
+          image: 'img/zonas/ciudad/portada.webp',
           fullDescription: 'Estilo de vida vibrante y cerca de todo, con infraestructura y servicios de primer mundo, convirtiéndola en una ciudad moderna y de gran riqueza cultural.',
           gallery: [
-            { image: 'fotos-2bleweb/Ciudad/costanera-2-aqua-325.jpeg', title: 'Costanera / Aqua', price: 'Desde $325.000' },
-            { image: 'fotos-2bleweb/Ciudad/ipanema-300.jpg', title: 'Ipanema', price: 'Desde $300.000' },
-            { image: 'fotos-2bleweb/Ciudad/ocean-reef-the-palms-1350.jpg', title: 'The Palms (Ocean Reef)', price: 'Desde $1.350.000' }
+            { image: 'img/zonas/ciudad/costanera-2-aqua-325.webp', title: 'Costanera / Aqua', price: 'Desde $325.000' },
+            { image: 'img/zonas/ciudad/ipanema-300.webp', title: 'Ipanema', price: 'Desde $300.000' },
+            { image: 'img/zonas/ciudad/ocean-reef-the-palms-1350.webp', title: 'The Palms (Ocean Reef)', price: 'Desde $1.350.000' }
           ],
           highlights: ['Conectividad global', 'Hub financiero y logistico'],
           ctaUrl: 'https://api.whatsapp.com/send/?phone=50763145710&text&type=phone_number&app_absent=0'
@@ -279,12 +268,12 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           title: 'Inversión',
           location: 'Panamá',
           description: 'El mejor país para invertir y retirarse.',
-          image: 'fotos-2bleweb/Inversion/portada-nautilus-205.jpg',
+          image: 'img/zonas/inversion/portada-nautilus-205.webp',
           fullDescription: 'Considerado el mejor país para invertir y retirarse gracias a su economía estable y dolarizada, convirtiéndose en unos de los mercados con mayor demanda en bienes raíces.',
           gallery: [
-            { image: 'fotos-2bleweb/Inversion/portada-nautilus-205.jpg', title: 'Nautilus', price: 'Desde $205.000' },
-            { image: 'fotos-2bleweb/Inversion/boquete-pino-alto-224.jpg', title: 'Pino Alto (Boquete)', price: 'Desde $224.000' },
-            { image: 'fotos-2bleweb/Inversion/the-westin-residences-424-2.jpg', title: 'The Westin Residences', price: 'Desde $424.000' }
+            { image: 'img/zonas/inversion/portada-nautilus-205.webp', title: 'Nautilus', price: 'Desde $205.000' },
+            { image: 'img/zonas/inversion/boquete-pino-alto-224.webp', title: 'Pino Alto (Boquete)', price: 'Desde $224.000' },
+            { image: 'img/zonas/inversion/the-westin-residences-424-2.webp', title: 'The Westin Residences', price: 'Desde $424.000' }
           ],
           highlights: ['Alta valorización', 'Mercado inmobiliario dinámico', 'Alta demanda'],
           ctaUrl: 'https://api.whatsapp.com/send/?phone=50763145710&text&type=phone_number&app_absent=0'
@@ -315,9 +304,9 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
       slides: [
         {
           title: "2Ble Realty",
-          mainTitle: <>Aliados <span className="italic font-extralight text-slate-300">Estratégicos</span></>,
+          mainTitle: <>Aliados <span className="italic font-extralight text-slate-500">Estratégicos</span></>,
           description: "Aquí encontrarás a los expertos que te guiarán en cada paso que des.",
-          image: "logos-aliados-2.jpg",
+          image: "img/logos-aliados-2.webp",
           logoOverlay: false,
           stats: [
             { value: "+10", label: "Años de Experiencia" },
@@ -327,9 +316,9 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
         },
         {
           title: "Experiencia única",
-          mainTitle: <>Jonathan<br /><span className="italic font-extralight text-slate-300">Valverde</span></>,
+          mainTitle: <>Jonathan<br /><span className="italic font-extralight text-slate-500">Valverde</span></>,
           description: "Accediendo a una extensa red de inversores internacionales y propiedades premium.",
-          image: "foto-jonathan.jpg",
+          image: "img/foto-jonathan.webp",
           stats: [
             {
               value: <a href="https://wa.me/50763145710" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-xl lg:text-2xl hover:text-champagne transition-colors"><Phone className="w-5 h-5 lg:w-6 lg:h-6 text-champagne" /> <span>+507 6314-5710</span></a>,
@@ -338,9 +327,9 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
         },
         {
           title: "Asesoría Élite",
-          mainTitle: <>Yiniva<br /><span className="italic font-extralight text-slate-300">Cedeño</span></>,
+          mainTitle: <>Yiniva<br /><span className="italic font-extralight text-slate-500">Cedeño</span></>,
           description: "Proporcionando información basada en datos para maximizar su potencial de inversión.",
-          image: "foto-yiniva.jpg",
+          image: "img/foto-yiniva.webp",
           stats: [
             {
               value: <a href="https://wa.me/50767635522" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-xl lg:text-2xl hover:text-champagne transition-colors"><Phone className="w-5 h-5 lg:w-6 lg:h-6 text-champagne" /> <span>+507 6763-5522</span></a>,
@@ -348,21 +337,10 @@ export const CONTENT: Record<'en' | 'es', ContentData> = {
           ]
         },
         {
-          title: "Seguimiento Personalizado",
-          mainTitle: <>Prospero<br /><span className="italic font-extralight text-slate-300">Lasso</span></>,
-          description: "Brindando acompañamiento integral y experto en cada etapa de su proceso de adquisición o venta.",
-          image: "foto-prospero.jpg",
-          stats: [
-            {
-              value: <a href="https://wa.me/50762801439" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-xl lg:text-2xl hover:text-champagne transition-colors"><Phone className="w-5 h-5 lg:w-6 lg:h-6 text-champagne" /> <span>+507 6280-1439</span></a>,
-            }
-          ]
-        },
-        {
           title: "Inversión Patrimonial",
-          mainTitle: <>Liriola<br /><span className="italic font-extralight text-slate-300">Cedeño</span></>,
+          mainTitle: <>Liriola<br /><span className="italic font-extralight text-slate-500">Cedeño</span></>,
           description: "Invertir en tu hogar es invertir en tu futuro.",
-          image: "liriola.jpg",
+          image: "img/liriola.webp",
           stats: [
             {
               value: <a href="https://wa.me/50762622115" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-xl lg:text-2xl hover:text-champagne transition-colors"><Phone className="w-5 h-5 lg:w-6 lg:h-6 text-champagne" /> <span>+507 6262-2115</span></a>,

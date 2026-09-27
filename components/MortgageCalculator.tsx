@@ -9,13 +9,18 @@ const MortgageCalculator: React.FC<MortgageCalculatorProps> = ({ lang }) => {
     return (
         <section id="calculator" className="bg-white py-24 lg:py-32 relative overflow-hidden">
             <div className="container mx-auto px-6 lg:px-10 reveal">
+                <h2 className="sr-only">{lang === 'es' ? 'Calculadora hipotecaria con Davivienda' : 'Mortgage calculator with Davivienda'}</h2>
                 <div className="flex flex-col items-center justify-center w-full mx-auto">
                     {/* Davivienda Logo */}
                     <div className="mb-12 apple-reveal" style={{ transitionDelay: '0.1s' }}>
                         <img
-                            src="logo-davivienda.png"
+                            src="/img/logo-davivienda.webp"
                             alt="Davivienda"
-                            className="h-[72px] lg:h-[88px] object-contain"
+                            width={270}
+                            height={88}
+                            loading="lazy"
+                            decoding="async"
+                            className="h-[72px] lg:h-[88px] w-auto object-contain"
                         />
                     </div>
 
@@ -26,11 +31,12 @@ const MortgageCalculator: React.FC<MortgageCalculatorProps> = ({ lang }) => {
                             width="100%"
                             height="1400"
                             frameBorder="0"
+                            loading="lazy"
                             style={{
                                 borderRadius: '20px',
                                 boxShadow: '0 10px 30px rgba(0,0,0,0.1)'
                             }}
-                            title="Mortgage Calculator"
+                            title={lang === 'es' ? 'Calculadora hipotecaria Davivienda' : 'Davivienda mortgage calculator'}
                         ></iframe>
                     </div>
                 </div>
