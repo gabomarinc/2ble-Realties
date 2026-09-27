@@ -1,3 +1,7 @@
+@import '@fontsource-variable/inter/wght.css';
+@import '@fontsource-variable/playfair-display/wght.css';
+@import '@fontsource-variable/playfair-display/wght-italic.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,7 +13,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter Variable', system-ui, sans-serif;
   scroll-behavior: auto;
   background-color: var(--navy);
   color: #fff;
@@ -20,7 +24,7 @@ h1,
 h2,
 h3,
 .font-serif {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display Variable', Georgia, serif;
 }
 
 
@@ -128,17 +132,25 @@ h3,
   opacity: 1;
 }
 
-/* Hero Speed-up */
-.hero-title {
-  opacity: 0;
-  transform: translateY(15px);
-  will-change: transform, opacity;
+/* Hero: entrada solo con CSS y sin opacidad, para que el texto se pinte en el primer frame (LCP) */
+@keyframes heroIn {
+  from {
+    transform: translateY(15px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
 }
 
-.hero-active .hero-title {
-  opacity: 1;
-  transform: translateY(0);
-  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+.hero-title {
+  animation: heroIn 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-title {
+    animation: none;
+  }
 }
 
 /* Simple Parallax */
@@ -217,4 +229,58 @@ h3,
 
 .animate-slide-in-right {
   animation: slideInRight 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+/* Tipografía de los artículos del blog */
+@layer components {
+  .article-prose h2 {
+    @apply font-serif text-3xl lg:text-4xl text-navy leading-tight mt-16 mb-6;
+  }
+
+  .article-prose section:first-child h2 {
+    @apply mt-0;
+  }
+
+  .article-prose h3 {
+    @apply font-serif text-xl lg:text-2xl text-navy leading-snug mt-10 mb-3;
+  }
+
+  .article-prose p {
+    @apply text-slate-600 text-[17px] lg:text-lg leading-[1.85] font-light mb-6;
+  }
+
+  .article-prose strong {
+    @apply text-navy font-semibold;
+  }
+
+  .article-prose a {
+    @apply text-champagne-dark font-medium underline decoration-champagne/50 underline-offset-4 hover:text-navy hover:decoration-navy transition-colors;
+  }
+
+  .article-prose ul,
+  .article-prose ol {
+    @apply mb-8 space-y-3 text-slate-600 text-[17px] lg:text-lg leading-[1.8] font-light;
+  }
+
+  .article-prose ul > li {
+    @apply relative pl-7;
+  }
+
+  .article-prose ul > li::before {
+    content: '';
+    @apply absolute left-0 top-[0.8em] w-2 h-2 rounded-full bg-champagne;
+  }
+
+  .article-prose ol {
+    counter-reset: item;
+  }
+
+  .article-prose ol > li {
+    @apply relative pl-10;
+    counter-increment: item;
+  }
+
+  .article-prose ol > li::before {
+    content: counter(item);
+    @apply absolute left-0 top-[0.2em] w-7 h-7 rounded-full bg-navy text-champagne text-xs font-black flex items-center justify-center;
+  }
 }

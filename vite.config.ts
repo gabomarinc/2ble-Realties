@@ -8,7 +8,8 @@ import { VitePWA } from 'vite-plugin-pwa';
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
   return {
-    base: './',
+    // Rutas absolutas: el sitio vive en la raíz del dominio y tiene la versión /en/
+    base: '/',
     server: {
       port: 3000,
       host: '0.0.0.0',
@@ -17,26 +18,26 @@ export default defineConfig(({ mode }) => {
       react(),
       VitePWA({
         registerType: 'autoUpdate',
-        includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg'],
+        injectRegister: 'script-defer',
         manifest: {
           name: '2Ble Realty',
           short_name: '2Ble',
-          description: 'Double the Standard - Exclusive Real Estate in Panama',
+          description: 'Bienes raíces e inversión inmobiliaria en Panamá',
+          lang: 'es',
+          start_url: '/',
           theme_color: '#0B1221',
           background_color: '#0B1221',
           display: 'standalone',
           icons: [
-            {
-              src: 'pwa-192x192.svg',
-              sizes: '192x192',
-              type: 'image/svg+xml'
-            },
-            {
-              src: 'pwa-512x512.svg',
-              sizes: '512x512',
-              type: 'image/svg+xml'
-            }
+            { src: '/icon-192.png', sizes: '192x192', type: 'image/png' },
+            { src: '/icon-512.png', sizes: '512x512', type: 'image/png' },
+            { src: '/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' }
           ]
+        },
+        workbox: {
+          // El HTML se pre-renderiza después del build: no se precachea, siempre viene de la red
+          globPatterns: ['assets/*.{js,css}', 'assets/*-latin-wght-*.woff2'],
+          navigateFallback: null
         }
       })
     ],

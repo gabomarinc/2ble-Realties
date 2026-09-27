@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom';
 import { ArrowRight, MapPin, X } from 'lucide-react';
 import { CONTENT } from '../constants';
 import { Language, Development } from '../types';
+import Img from './Img';
 
 interface DevelopmentsProps {
     lang: Language;
@@ -21,7 +22,7 @@ const Developments: React.FC<DevelopmentsProps> = ({ lang }) => {
                     <h2 className="text-4xl md:text-8xl font-serif leading-none mb-6 lg:mb-8 font-black tracking-tight">
                         {content.title}
                     </h2>
-                    <p className="text-lg lg:text-xl text-slate-400 font-light max-w-2xl italic leading-relaxed">
+                    <p className="text-lg lg:text-xl text-slate-500 font-light max-w-2xl italic leading-relaxed">
                         {content.subtitle}
                     </p>
                 </div>
@@ -31,10 +32,14 @@ const Developments: React.FC<DevelopmentsProps> = ({ lang }) => {
                 {content.items.map((item) => (
                     <div
                         key={item.id}
+                        role="button"
+                        tabIndex={0}
+                        aria-label={`${item.title} — ${item.location}`}
                         className="gallery-item group cursor-pointer"
                         onClick={() => setSelectedItem(item)}
+                        onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setSelectedItem(item); } }}
                     >
-                        <img src={item.image} alt={item.title} loading="lazy" />
+                        <Img src={item.image} alt={`${item.title}, ${item.location}`} sizes="(min-width: 768px) 60vw, 100vw" />
                         <div className="gallery-content">
                             <span className="text-champagne text-[9px] uppercase tracking-[0.6em] font-black mb-2 block">{ui.premiumAsset}</span>
                             <h3 className="text-white text-3xl lg:text-4xl font-serif mb-4 leading-none">{item.title}</h3>
@@ -66,6 +71,7 @@ const Developments: React.FC<DevelopmentsProps> = ({ lang }) => {
                         {/* Close Button */}
                         <button
                             onClick={() => setSelectedItem(null)}
+                            aria-label={lang === 'es' ? 'Cerrar' : 'Close'}
                             className="absolute top-6 right-6 z-20 bg-white/20 backdrop-blur-md hover:bg-white text-white hover:text-navy p-2 rounded-full transition-all"
                         >
                             <X size={24} />
@@ -74,9 +80,10 @@ const Developments: React.FC<DevelopmentsProps> = ({ lang }) => {
                         <div className="grid lg:grid-cols-2">
                             {/* Image Section */}
                             <div className="h-64 lg:h-auto relative">
-                                <img
+                                <Img
                                     src={selectedItem.image}
                                     alt={selectedItem.title}
+                                    sizes="(min-width: 1024px) 50vw, 100vw"
                                     className="w-full h-full object-cover"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-transparent to-transparent lg:hidden"></div>
@@ -92,7 +99,7 @@ const Developments: React.FC<DevelopmentsProps> = ({ lang }) => {
                                     <h3 className="text-5xl font-serif text-navy leading-none mb-2">{selectedItem.title}</h3>
                                     <div className="flex items-center gap-2 text-slate-400">
                                         <MapPin size={16} />
-                                        <span className="text-xs uppercase tracking-widest font-bold">{selectedItem.location}</span>
+                                        <span className="text-xs uppercase tracking-widest font-bold text-slate-500">{selectedItem.location}</span>
                                     </div>
                                 </div>
 
@@ -134,12 +141,12 @@ const Developments: React.FC<DevelopmentsProps> = ({ lang }) => {
                                                     >
                                                         <div className="aspect-video rounded-xl overflow-hidden mb-3 relative">
                                                             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors z-10"></div>
-                                                            <img src={imgSrc} className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" alt={imgTitle || "Gallery"} />
+                                                            <Img src={imgSrc} sizes="320px" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" alt={imgTitle || selectedItem.title} />
                                                         </div>
                                                         {isObj && (
                                                             <div>
                                                                 <h5 className="text-navy font-bold text-sm tracking-wide mb-1">{imgTitle}</h5>
-                                                                <p className="text-champagne text-xs font-light tracking-widest">{imgPrice}</p>
+                                                                <p className="text-champagne-dark text-xs font-light tracking-widest">{imgPrice}</p>
                                                             </div>
                                                         )}
                                                     </div>
@@ -170,13 +177,14 @@ const Developments: React.FC<DevelopmentsProps> = ({ lang }) => {
             {lightboxItem && createPortal(
                 <div className="fixed inset-0 z-[110] flex items-center justify-center bg-black/95 backdrop-blur-sm animate-in fade-in duration-300" onClick={() => setLightboxItem(null)}>
                     <button
+                        aria-label={lang === 'es' ? 'Cerrar' : 'Close'}
                         className="absolute top-6 right-6 z-20 text-white/50 hover:text-white p-2 transition-colors"
                     >
                         <X size={40} />
                     </button>
                     <div className="relative max-w-[95vw] max-h-[95vh] flex flex-col items-center">
                         <img
-                            src={lightboxItem.image}
+                            src={`/${lightboxItem.image}`}
                             alt={lightboxItem.title || "Full View"}
                             className="max-w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl animate-zoom-in"
                         />

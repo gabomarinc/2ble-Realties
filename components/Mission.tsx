@@ -11,6 +11,7 @@ interface MissionProps {
 // We need to access CONTENT inside.
 
 import { CONTENT } from '../constants';
+import Img from './Img';
 
 const Mission: React.FC<MissionProps> = ({ lang }) => {
     const content = CONTENT[lang].missionVision;
@@ -33,15 +34,16 @@ const Mission: React.FC<MissionProps> = ({ lang }) => {
 
                     {/* Dark Card - Manifesto */}
                     <div className="reveal relative h-[500px] lg:h-[700px] rounded-[40px] lg:rounded-[50px] overflow-hidden group">
-                        <img
-                            src="foto-interior-6.jpeg"
-                            alt="Office"
+                        <Img
+                            src="img/foto-interior-6.webp"
+                            alt=""
+                            sizes="(min-width: 1024px) 50vw, 100vw"
                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                         />
                         <div className="absolute inset-0 bg-navy/60 group-hover:bg-navy/50 transition-colors duration-500"></div>
 
                         <div className="absolute inset-0 p-8 lg:p-12 flex flex-col justify-end">
-                            <Quote size={48} className="text-champagne/20 mb-auto transform -scale-x-100 lg:w-16 lg:h-16" />
+                            <Quote size={48} aria-hidden="true" className="text-champagne/20 mb-auto transform -scale-x-100 lg:w-16 lg:h-16" />
 
                             <div className="apple-reveal" style={{ transitionDelay: '0.2s' }}>
                                 <h3 className="text-3xl lg:text-5xl font-serif text-white mb-6 lg:mb-8">{content.mission.title}</h3>
@@ -57,7 +59,7 @@ const Mission: React.FC<MissionProps> = ({ lang }) => {
                         <div className="flex flex-col h-full">
                             <div className="flex items-center gap-4 lg:gap-6 mb-8 lg:mb-12 apple-reveal" style={{ transitionDelay: '0.1s' }}>
                                 <div className="bg-navy p-3 lg:p-4 rounded-full">
-                                    <Star className="text-champagne w-6 h-6 lg:w-8 lg:h-8 fill-current" />
+                                    <Star aria-hidden="true" className="text-champagne w-6 h-6 lg:w-8 lg:h-8 fill-current" />
                                 </div>
                                 <h3 className="text-3xl lg:text-5xl font-serif text-navy">{content.vision.title}</h3>
                             </div>
@@ -67,9 +69,10 @@ const Mission: React.FC<MissionProps> = ({ lang }) => {
                             </p>
 
                             <div className="h-48 lg:h-64 rounded-3xl overflow-hidden mt-auto apple-reveal" style={{ transitionDelay: '0.3s' }}>
-                                <img
-                                    src="foto-interior-5.jpeg"
-                                    alt="Interior"
+                                <Img
+                                    src="img/foto-interior-5.webp"
+                                    alt=""
+                                    sizes="(min-width: 1024px) 40vw, 100vw"
                                     className="w-full h-full object-cover"
                                 />
                             </div>
@@ -77,7 +80,7 @@ const Mission: React.FC<MissionProps> = ({ lang }) => {
 
                         {/* Decorative Circle */}
                         <div className="absolute -right-4 -bottom-4 lg:-right-8 lg:-bottom-8 w-24 h-24 lg:w-32 lg:h-32 bg-champagne rounded-full flex items-center justify-center shadow-lg">
-                            <Quote size={24} className="text-white fill-current lg:w-8 lg:h-8" />
+                            <Quote size={24} aria-hidden="true" className="text-white fill-current lg:w-8 lg:h-8" />
                         </div>
                     </div>
 
